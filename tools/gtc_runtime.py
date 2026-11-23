@@ -186,6 +186,23 @@ def validate_record(record: Any, source_ids: set[str], filename: str = "<memory>
 def validate_catalog(root: Path = ROOT) -> tuple[list[str], list[str], list[Path]]:
     source_registry, errors = load_sources(root)
     known_sources = set(source_registry)
+    try:
+        maker_payload = read_json(root / "data/registry/manufacturers.json")
+        maker_entries = maker_payload.get("manufacturers", [])
+        if not isinstance(maker_entries, list):
+            raise ValueError("manufacturers must be an array")
+        known_manufacturers: set[str] = set()
+        for maker_index, maker in enumerate(maker_entries):
+            if not isinstance(maker, dict) or not isinstance(maker.get("manufacturer_id"), str) or not isinstance(maker.get("name"), str):
+                errors.append(f"manufacturers[{maker_index}] must contain manufacturer_id and name")
+                continue
+            maker_id = maker["manufacturer_id"]
+            if maker_id in known_manufacturers:
+                errors.append(f"duplicate manufacturer_id {maker_id}")
+            known_manufacturers.add(maker_id)
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        errors.append(f"cannot validate manufacturer registry: {exc}")
+        known_manufacturers = set()
     taxonomy_payload = read_json(root / "data/registry/taxonomy.json")
     known_taxonomies = {x.get("taxonomy_id") for x in taxonomy_payload.get("taxonomy", []) if isinstance(x, dict)}
     schema_dir = root / "schemas"

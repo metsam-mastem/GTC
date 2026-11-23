@@ -17,6 +17,7 @@ class RuntimeValidationTests(unittest.TestCase):
             "gtc_id": "GTC-TEST-DEVICE-001",
             "entity_type": "device_model",
             "canonical_name": "Test Device",
+            "manufacturer": {"manufacturer_id": "MFR-TEST", "name": "Test Manufacturer"},
             "taxonomy_ids": ["mobile"],
             "identity": {"model_codes": ["TEST-001"]},
             "claims": [{
