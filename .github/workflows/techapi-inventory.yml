@@ -1,0 +1,41 @@
+name: GTC TechAPI Inventory
+
+on:
+  schedule:
+    - cron: "37 5 * * 1"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum number of paths to keep (0 = all)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gtc-techapi-inventory
+  cancel-in-progress: true
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Discover upstream dataset paths
+        env:
+          GITHUB_TOKEN: \${{ github.token }}
+        run: |
+          LIMIT="\${{ github.event.inputs.limit || '0' }}"
+          python tools/discoveries/discover_techapi.py --categories smartphone,tablet,watch,pda,laptop,monitor,soc,cpu,gpu --limit "$LIMIT"
+      - name: Upload candidate inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: gtc-techapi-candidate-inventory
+          path: research/inventories/techapi-manifest.json
+          if-no-files-found: error
+          retention-days: 30
