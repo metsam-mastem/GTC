@@ -116,6 +116,29 @@ class RuntimeValidationTests(unittest.TestCase):
         self.assertEqual(record["lifecycle"]["release_date"], "2024-03-01")
         self.assertTrue(all(claim["verification_status"] == "UNVERIFIED" for claim in record["claims"]))
 
+    def test_component_import_preserves_benchmark_and_architecture_fields(self):
+        raw = {
+            "slug": "ryzen-9-9950x",
+            "name": "AMD Ryzen 9 9950X",
+            "manufacturer": "amd",
+            "release_date": "2024-08-31",
+            "architecture": "Zen 5",
+            "cores": 16,
+            "threads": 32,
+            "cinebench_r23_multi": 42000,
+            "passmark_cpu_mark": 65756,
+            "verified": True,
+            "source_urls": ["https://www.amd.com/example"]
+        }
+        record, target = convert(raw, "cpu/amd/2024/consumer/ryzen-9-9950x.json", "2026-11-23")
+        self.assertEqual(target.as_posix(), "data/components/cpus/ryzen-9-9950x.json")
+        self.assertEqual(record["manufacturer"]["manufacturer_id"], "MFR-AMD")
+        self.assertEqual(record["specifications"]["architecture"], "Zen 5")
+        self.assertEqual(record["specifications"]["cores"], 16)
+        self.assertEqual(record["specifications"]["cinebench_r23_multi"], 42000)
+        self.assertEqual(record["specifications"]["passmark_cpu_mark"], 65756)
+        self.assertTrue(all(claim["verification_status"] == "UNVERIFIED" for claim in record["claims"]))
+
     def test_techapi_import_keeps_upstream_unverified(self):
         raw = {
             "slug": "sample-phone",
