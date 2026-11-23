@@ -185,7 +185,7 @@ def convert(raw: dict[str, Any], source_relative_path: str, retrieved_at: str) -
     manufacturer_name = manufacturer_name_for(manufacturer_raw)
     manufacturer_id = manufacturer_id_for(manufacturer_name)
     gtc_id = "GTC-IMP-TECHAPI-" + slugify(slug).upper()
-    source_url = UPSTREAM + source_relative_path.replace("\\\\", "/")
+    source_url = UPSTREAM + source_relative_path.replace("\\", "/")
     upstream_urls = raw.get("source_urls", [])
     if not isinstance(upstream_urls, list):
         upstream_urls = []
@@ -206,7 +206,7 @@ def convert(raw: dict[str, Any], source_relative_path: str, retrieved_at: str) -
         },
         "lifecycle": {
             "release_year": int(str(raw.get("release_date"))[:4]) if raw.get("release_date") and str(raw.get("release_date"))[:4].isdigit() else None,
-            "release_date": raw.get("release_date") if isinstance(raw.get("release_date"), str) and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", raw["release_date"]) else None,
+            "release_date": raw.get("release_date") if isinstance(raw.get("release_date"), str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw["release_date"]) else None,
             "announcement_date": None,
             "discontinued_date": None,
             "status": "unknown",
@@ -241,7 +241,7 @@ def convert(raw: dict[str, Any], source_relative_path: str, retrieved_at: str) -
             continue
         field_path = FIELD_PATHS.get(field, f"extensions.techapi_fields.{field}")
         if field == "release_date" and not (
-            isinstance(value, str) and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", value)
+            isinstance(value, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", value)
         ):
             field_path = "extensions.techapi_fields.release_date_raw"
         set_nested(record, field_path, value)
