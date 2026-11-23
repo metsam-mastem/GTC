@@ -109,6 +109,11 @@ class RuntimeValidationTests(unittest.TestCase):
         self.assertEqual(by_path["hardware.charging.wired_max_w"], 45)
         self.assertEqual(by_path["physical.dimensions"], {"height_mm": 150, "width_mm": 70, "depth_mm": 8})
         self.assertEqual(by_path["extensions.techapi_fields.raw_gsmarena"], {"launch_status": "Discontinued"})
+        self.assertEqual(record["pricing"]["msrp_usd"], 699)
+        self.assertEqual(record["hardware"]["cameras"], [{"type": "main", "mp": 50}])
+        self.assertEqual(record["hardware"]["charging"]["wired_max_w"], 45)
+        self.assertEqual(record["physical"]["dimensions"]["height_mm"], 150)
+        self.assertEqual(record["lifecycle"]["release_date"], "2024-03-01")
         self.assertTrue(all(claim["verification_status"] == "UNVERIFIED" for claim in record["claims"]))
 
     def test_techapi_import_keeps_upstream_unverified(self):
