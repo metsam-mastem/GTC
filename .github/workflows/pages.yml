@@ -1,8 +1,6 @@
 name: GTC Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -18,7 +16,7 @@ jobs:
   build-and-deploy:
     environment:
       name: github-pages
-      url: \${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:

@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-COM-LAPTOP-APPLE-MACBOOK-AIR-M1-2020",
+  "entity_type": "device_model",
+  "canonical_name": "Apple MacBook Air 13-inch (M1, 2020)",
+  "manufacturer": {
+    "manufacturer_id": "MFR-APPLE",
+    "name": "Apple"
+  },
+  "product_family": {
+    "name": "MacBook Air"
+  },
+  "taxonomy_ids": [
+    "computing",
+    "computing.laptop"
+  ],
+  "identity": {
+    "model_codes": [
+      "MacBookAir10,1"
+    ],
+    "codenames": [],
+    "aliases": [
+      "MacBook Air (M1, 2020)"
+    ],
+    "regulatory_ids": [],
+    "regional_skus": []
+  },
+  "lifecycle": {
+    "release_year": 2020,
+    "release_date": null,
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "legacy",
+    "events": [
+      {
+        "event_type": "year_introduced",
+        "date": "2020",
+        "description": "Apple identifies the M1 MacBook Air as a 2020 model.",
+        "source_claim_ids": [
+          "GTC-CLM-MBA-M1-YEAR"
+        ]
+      }
+    ]
+  },
+  "markets": [
+    "Global"
+  ],
+  "physical": {
+    "form_factor": "clamshell ultralight notebook",
+    "dimensions_mm": {
+      "width": 304.1,
+      "depth": 212.4,
+      "height_min": 4.1,
+      "height_max": 16.1
+    },
+    "mass_g": 1290,
+    "materials": [
+      "aluminium enclosure"
+    ]
+  },
+  "hardware": {
+    "soc_id": "GTC-CMP-SOC-APPLE-M1",
+    "processor": {
+      "name": "Apple M1",
+      "cpu_cores": 8,
+      "performance_cores": 4,
+      "efficiency_cores": 4
+    },
+    "gpu": {
+      "core_configurations": [
+        7,
+        8
+      ]
+    },
+    "npu": {
+      "name": "Apple Neural Engine",
+      "cores": 16
+    },
+    "memory": {
+      "unified_memory_gb": [
+        8,
+        16
+      ]
+    },
+    "storage": {
+      "ssd_options_gb": [
+        256,
+        512,
+        1024,
+        2048
+      ]
+    },
+    "display": {
+      "size_in": 13.3,
+      "type": "LED-backlit IPS LCD with IPS technology",
+      "resolution": "2560x1600",
+      "pixel_density_ppi": 227,
+      "brightness_nits": 400
+    },
+    "battery": {
+      "type": "integrated lithium-polymer",
+      "capacity_wh": 49.9,
+      "video_playback_hours_up_to": 18
+    },
+    "connectivity": [
+      "Wi-Fi 6 (802.11ax)",
+      "Bluetooth 5.0",
+      "2 x Thunderbolt / USB 4",
+      "3.5 mm headphone jack"
+    ]
+  },
+  "software": {
+    "operating_system": "macOS",
+    "launch_software": null,
+    "firmware": null
+  },
+  "relationships": [
+    {
+      "relation_type": "uses_component",
+      "target_gtc_id": "GTC-CMP-SOC-APPLE-M1"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-MBA-M1-YEAR",
+      "field_path": "lifecycle.release_year",
+      "value": 2020,
+      "source_id": "SRC-APPLE-MAC-IDENTIFY",
+      "source_url": "https://support.apple.com/en-us/102869",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Apple identifies the M1 MacBook Air as introduced in 2020."
+    },
+    {
+      "claim_id": "GTC-CLM-MBA-M1-IDENTIFIER",
+      "field_path": "identity.model_codes",
+      "value": [
+        "MacBookAir10,1"
+      ],
+      "source_id": "SRC-APPLE-MAC-IDENTIFY",
+      "source_url": "https://support.apple.com/en-us/102869",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Apple model identification reference lists the model identifier for the M1 MacBook Air."
+    },
+    {
+      "claim_id": "GTC-CLM-MBA-M1-CPU",
+      "field_path": "hardware.processor",
+      "value": {
+        "name": "Apple M1",
+        "cpu_cores": 8,
+        "performance_cores": 4,
+        "efficiency_cores": 4
+      },
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Apple technical specifications for the M1 MacBook Air."
+    },
+    {
+      "claim_id": "GTC-CLM-MBA-M1-GPU",
+      "field_path": "hardware.gpu.core_configurations",
+      "value": [
+        7,
+        8
+      ],
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Apple lists 7-core or 8-core GPU configurations depending on model configuration."
+    },
+    {
+      "claim_id": "GTC-CLM-MBA-M1-NEURAL",
+      "field_path": "hardware.npu.cores",
+      "value": 16,
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "16-core Neural Engine in the Apple M1 chip."
+    },
+    {
+      "claim_id": "GTC-CLM-MBA-M1-DISPLAY",
+      "field_path": "hardware.display",
+      "value": {
+        "size_in": 13.3,
+        "resolution": "2560x1600",
+        "pixel_density_ppi": 227,
+        "brightness_nits": 400
+      },
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Display values transcribed as normalized factual values from Apple technical specifications."
+    },
+    {
+      "claim_id": "GTC-CLM-MBA-M1-MEMORY",
+      "field_path": "hardware.memory.unified_memory_gb",
+      "value": [
+        8,
+        16
+      ],
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Unified memory configurations; availability depends on configuration."
+    },
+    {
+      "claim_id": "GTC-CLM-MBA-M1-STORAGE",
+      "field_path": "hardware.storage.ssd_options_gb",
+      "value": [
+        256,
+        512,
+        1024,
+        2048
+      ],
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "SSD capacity options depend on purchase configuration."
+    },
+    {
+      "claim_id": "GTC-CLM-MBA-M1-BATTERY",
+      "field_path": "hardware.battery.capacity_wh",
+      "value": 49.9,
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Apple published battery capacity for this generation."
+    }
+  ],
+  "source_ids": [
+    "SRC-APPLE-MAC-IDENTIFY",
+    "SRC-APPLE-MAC-SPECS"
+  ],
+  "completeness": {
+    "state": "SPECIFICATIONS_SOURCED",
+    "missing_sections": [
+      "board and assembly revisions",
+      "component BOM and package markings",
+      "display and battery supplier variants",
+      "firmware and boot chain",
+      "repair and thermal test evidence"
+    ]
+  },
+  "extensions": {
+    "variant_note": "7-core and 8-core GPU and memory/storage CTO configurations are retained as configuration options until individual order codes are independently resolved."
+  }
+}

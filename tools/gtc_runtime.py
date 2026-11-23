@@ -100,7 +100,7 @@ def load_sources(root: Path = ROOT) -> tuple[dict[str, dict[str, Any]], list[str
     return registry, errors
 
 
-def validate_record(record: Any, source_ids: set[str], filename: str = "<memory>") -> list[str]:
+def validate_record(record: Any, source_ids: set[str], filename: str = "<memory>", manufacturer_ids: set[str] | None = None) -> list[str]:
     errors: list[str] = []
     if not isinstance(record, dict):
         return [f"{filename}: record must be a JSON object"]
@@ -116,6 +116,11 @@ def validate_record(record: Any, source_ids: set[str], filename: str = "<memory>
         errors.append(f"{filename}: invalid gtc_id")
     if record.get("entity_type") not in ALLOWED_ENTITY_TYPES:
         errors.append(f"{filename}: invalid entity_type")
+    manufacturer = record.get("manufacturer")
+    if not isinstance(manufacturer, dict):
+        errors.append(f"{filename}: manufacturer must be an object")
+    elif manufacturer_ids is not None and manufacturer.get("manufacturer_id") not in manufacturer_ids:
+        errors.append(f"{filename}: unknown manufacturer_id {manufacturer.get('manufacturer_id')}")
     if not isinstance(record.get("canonical_name"), str) or not record.get("canonical_name", "").strip():
         errors.append(f"{filename}: canonical_name must be non-empty")
     taxonomy_ids = record.get("taxonomy_ids")
@@ -203,7 +208,7 @@ def validate_catalog(root: Path = ROOT) -> tuple[list[str], list[str], list[Path
         except (OSError, json.JSONDecodeError) as exc:
             errors.append(f"{path.relative_to(root)} invalid JSON: {exc}")
             continue
-        errors.extend(validate_record(record, known_sources, str(path.relative_to(root))))
+        errors.extend(validate_record(record, known_sources, str(path.relative_to(root)), known_manufacturers))
         if not isinstance(record, dict):
             continue
         for taxonomy_id in record.get("taxonomy_ids", []):
@@ -242,7 +247,7 @@ def validate_catalog(root: Path = ROOT) -> tuple[list[str], list[str], list[Path
     return errors, warnings, paths
 
 
-def build_index(root: Path = ROOT) -> tuple[Path, Path]:
+def build_index(root: Path = ROOT) -> tuple[Path, Path, Path]:
     errors, warnings, paths = validate_catalog(root)
     if errors:
         raise ValueError("catalogue validation failed; run validate for details")

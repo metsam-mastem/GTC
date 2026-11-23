@@ -31,3 +31,10 @@ Last checked: 2026-11-23. Public project metadata and documentation were inspect
 
 ## Size and acquisition
 TechAPI's GitHub metadata reported a very large repository size on the audit date. Avoid full clones in routine development and CI. Prefer selected raw JSON files, sparse checkout or reviewed snapshots. DeviceFarmer's database is also sizeable and regionally incomplete; do not pull its full asset set into GTC by default.
+
+
+## Additional primary sources added to the catalogue
+- Apple Mac model identification: https://support.apple.com/en-us/102869 — model identifier and externally visible model identification.
+- Apple MacBook Air M1 technical specifications: https://support.apple.com/en-us/111883 — manufacturer-published configuration and hardware data.
+- Qualcomm Snapdragon 8 Elite launch: https://www.qualcomm.com/news/releases/2024/10/qualcomm-unveils-snapdragon-8-elite-with-the-world-s-fastest-mob — official 21 October 2024 press note.
+- Qualcomm Snapdragon 8 Elite Product Brief: https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/company/news-media/media-center/press-kits/snapdragon-summit-2024/day-1/documents/Snapdragon8EliteProductBrief.pdf — official platform technical brief, including CPU, GPU, NPU, connectivity, memory and SM8750-AB part number.

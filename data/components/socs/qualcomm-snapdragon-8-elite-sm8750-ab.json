@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-CMP-SOC-QUALCOMM-SNAPDRAGON-8-ELITE-SM8750-AB",
+  "entity_type": "component",
+  "canonical_name": "Qualcomm Snapdragon 8 Elite Mobile Platform (SM8750-AB)",
+  "component_type": "mobile_application_processor",
+  "manufacturer": {
+    "manufacturer_id": "MFR-QUALCOMM",
+    "name": "Qualcomm"
+  },
+  "taxonomy_ids": [
+    "components",
+    "components.soc"
+  ],
+  "identity": {
+    "part_numbers": [
+      "SM8750-AB"
+    ],
+    "aliases": [
+      "Snapdragon 8 Elite",
+      "Snapdragon 8 Elite Mobile Platform"
+    ]
+  },
+  "specifications": {
+    "process_nm": 3,
+    "cpu": {
+      "name": "2nd-generation Qualcomm Oryon",
+      "architecture": "64-bit",
+      "prime_core_peak_ghz": 4.32,
+      "performance_core_peak_ghz": 3.53
+    },
+    "gpu": {
+      "name": "Qualcomm Adreno GPU",
+      "architecture": "sliced architecture"
+    },
+    "npu": {
+      "name": "Qualcomm Hexagon NPU",
+      "architecture": "scalar, vector and tensor accelerators"
+    },
+    "modem": {
+      "name": "Snapdragon X80 5G Modem-RF System",
+      "downlink_peak_gbps": 10,
+      "uplink_peak_gbps": 3.5
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "Bluetooth 6.0",
+      "uwb": "integrated UWB"
+    },
+    "memory": {
+      "type": "LPDDR5X",
+      "maximum_gb": 24,
+      "peak_frequency_ghz": 5.3
+    },
+    "storage": {
+      "interface": "UFS 4.0"
+    }
+  },
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-SD8E-ANNOUNCEMENT",
+      "field_path": "lifecycle.announcement_date",
+      "value": "2024-10-21",
+      "source_id": "SRC-QUALCOMM-8-ELITE-PRESS",
+      "source_url": "https://www.qualcomm.com/news/releases/2024/10/qualcomm-unveils-snapdragon-8-elite-with-the-world-s-fastest-mob",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Qualcomm press note is dated 21 October 2024; announcement date is not a retail-device launch date."
+    },
+    {
+      "claim_id": "GTC-CLM-SD8E-PART",
+      "field_path": "identity.part_numbers",
+      "value": [
+        "SM8750-AB"
+      ],
+      "source_id": "SRC-QUALCOMM-8-ELITE-BRIEF",
+      "source_url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/company/news-media/media-center/press-kits/snapdragon-summit-2024/day-1/documents/Snapdragon8EliteProductBrief.pdf",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "The product brief lists part number SM8750-AB."
+    },
+    {
+      "claim_id": "GTC-CLM-SD8E-CPU",
+      "field_path": "specifications.cpu",
+      "value": {
+        "name": "2nd-generation Qualcomm Oryon",
+        "architecture": "64-bit",
+        "prime_core_peak_ghz": 4.32,
+        "performance_core_peak_ghz": 3.53
+      },
+      "source_id": "SRC-QUALCOMM-8-ELITE-BRIEF",
+      "source_url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/company/news-media/media-center/press-kits/snapdragon-summit-2024/day-1/documents/Snapdragon8EliteProductBrief.pdf",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Product brief page 2. Maximum CPU speed depends on platform version and OEM implementation."
+    },
+    {
+      "claim_id": "GTC-CLM-SD8E-GPU",
+      "field_path": "specifications.gpu",
+      "value": {
+        "name": "Qualcomm Adreno GPU",
+        "architecture": "sliced architecture"
+      },
+      "source_id": "SRC-QUALCOMM-8-ELITE-BRIEF",
+      "source_url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/company/news-media/media-center/press-kits/snapdragon-summit-2024/day-1/documents/Snapdragon8EliteProductBrief.pdf",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Product brief describes the Adreno GPU and sliced architecture."
+    },
+    {
+      "claim_id": "GTC-CLM-SD8E-NPU",
+      "field_path": "specifications.npu",
+      "value": "Qualcomm Hexagon NPU",
+      "source_id": "SRC-QUALCOMM-8-ELITE-BRIEF",
+      "source_url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/company/news-media/media-center/press-kits/snapdragon-summit-2024/day-1/documents/Snapdragon8EliteProductBrief.pdf",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Product brief identifies the Hexagon NPU and AI accelerator architecture."
+    },
+    {
+      "claim_id": "GTC-CLM-SD8E-PROCESS",
+      "field_path": "specifications.process_nm",
+      "value": 3,
+      "source_id": "SRC-QUALCOMM-8-ELITE-BRIEF",
+      "source_url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/company/news-media/media-center/press-kits/snapdragon-summit-2024/day-1/documents/Snapdragon8EliteProductBrief.pdf",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Product brief page 2 states 3nm process technology."
+    },
+    {
+      "claim_id": "GTC-CLM-SD8E-MODEM",
+      "field_path": "specifications.modem",
+      "value": {
+        "name": "Snapdragon X80 5G Modem-RF System",
+        "downlink_peak_gbps": 10,
+        "uplink_peak_gbps": 3.5
+      },
+      "source_id": "SRC-QUALCOMM-8-ELITE-BRIEF",
+      "source_url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/company/news-media/media-center/press-kits/snapdragon-summit-2024/day-1/documents/Snapdragon8EliteProductBrief.pdf",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Product brief page 2; maximum figures are platform capabilities."
+    },
+    {
+      "claim_id": "GTC-CLM-SD8E-CONNECTIVITY",
+      "field_path": "specifications.connectivity",
+      "value": {
+        "wifi": "Wi-Fi 7",
+        "bluetooth": "Bluetooth 6.0",
+        "uwb": "integrated UWB"
+      },
+      "source_id": "SRC-QUALCOMM-8-ELITE-BRIEF",
+      "source_url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/company/news-media/media-center/press-kits/snapdragon-summit-2024/day-1/documents/Snapdragon8EliteProductBrief.pdf",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Product brief lists FastConnect 7900, Wi-Fi 7, integrated Bluetooth 6.0 and UWB."
+    },
+    {
+      "claim_id": "GTC-CLM-SD8E-MEMORY",
+      "field_path": "specifications.memory",
+      "value": {
+        "type": "LPDDR5X",
+        "maximum_gb": 24,
+        "peak_frequency_ghz": 5.3
+      },
+      "source_id": "SRC-QUALCOMM-8-ELITE-BRIEF",
+      "source_url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/images/company/news-media/media-center/press-kits/snapdragon-summit-2024/day-1/documents/Snapdragon8EliteProductBrief.pdf",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Product brief page 2 lists LPDDR5X support up to 5.3 GHz and up to 24 GB."
+    }
+  ],
+  "source_ids": [
+    "SRC-QUALCOMM-8-ELITE-PRESS",
+    "SRC-QUALCOMM-8-ELITE-BRIEF"
+  ],
+  "completeness": {
+    "state": "SPECIFICATIONS_SOURCED",
+    "missing_sections": [
+      "package and pinout",
+      "board-level reference design",
+      "power rail details",
+      "thermal envelope and OEM implementation",
+      "silicon revision and errata",
+      "independent device-level benchmark observations"
+    ]
+  },
+  "extensions": {
+    "scope_note": "Values are platform-level maximums from Qualcomm's brief. OEM configurations and thermal/power limits differ by device implementation."
+  }
+}

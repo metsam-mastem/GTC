@@ -52,3 +52,7 @@ This is an extensible foundation and a small, cited starter catalogue, not a com
 
 ## Principles
 Source first. No fabricated specifications. No hidden merges. No copied restricted media. No personal-device identifiers. No unsupported completeness claims.
+
+
+## Publish the Explorer
+The repository includes a manual GitHub Pages workflow at `.github/workflows/pages.yml`. Enable GitHub Pages in repository Settings → Pages → Build and deployment → GitHub Actions, then run the GTC Pages workflow from Actions. The workflow is manual by design so an unconfigured Pages environment does not fail every normal code push.

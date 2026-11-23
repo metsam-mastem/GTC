@@ -34,15 +34,22 @@ class RuntimeValidationTests(unittest.TestCase):
         }
 
     def test_valid_record_passes(self):
-        self.assertEqual(validate_record(self.record, self.sources), [])
+        self.assertEqual(validate_record(self.record, self.sources, manufacturer_ids={"MFR-TEST"}), [])
+
+    def test_unknown_manufacturer_fails(self):
+        errors = validate_record(self.record, self.sources, manufacturer_ids={"MFR-OTHER"})
+        self.assertTrue(any("unknown manufacturer_id" in x for x in errors))
+
+    def test_known_manufacturer_passes(self):
+        self.assertEqual(validate_record(self.record, self.sources, manufacturer_ids={"MFR-TEST"}), [])
 
     def test_unknown_source_fails(self):
         self.record["claims"][0]["source_id"] = "SRC-MISSING"
-        self.assertTrue(any("unknown source_id" in x for x in validate_record(self.record, self.sources)))
+        self.assertTrue(any("unknown source_id" in x for x in validate_record(self.record, self.sources, manufacturer_ids={"MFR-TEST"})))
 
     def test_duplicate_claim_id_fails(self):
         self.record["claims"].append(dict(self.record["claims"][0]))
-        self.assertTrue(any("duplicate claim_id" in x for x in validate_record(self.record, self.sources)))
+        self.assertTrue(any("duplicate claim_id" in x for x in validate_record(self.record, self.sources, manufacturer_ids={"MFR-TEST"})))
 
     def test_private_identifier_is_rejected(self):
         self.record["extensions"] = {"imei": "000000000000000"}

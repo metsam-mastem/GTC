@@ -41,8 +41,8 @@
 - [ ] Reproducible reverse-engineering observations
 
 ## Explorer
-- [ ] Static/offline web atlas
-- [ ] Full-text search and filters
+- [x] Static/offline web atlas and responsive dossier explorer
+- [x] Full-text client-side search, filters and sorting
 - [ ] Timeline and lineage explorer
 - [ ] Device comparison workspace
 - [ ] Component-to-device graph

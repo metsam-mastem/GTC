@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-CMP-SOC-APPLE-M1",
+  "entity_type": "component",
+  "canonical_name": "Apple M1 System on a Chip",
+  "component_type": "system_on_chip",
+  "manufacturer": {
+    "manufacturer_id": "MFR-APPLE",
+    "name": "Apple"
+  },
+  "taxonomy_ids": [
+    "components",
+    "components.soc"
+  ],
+  "identity": {
+    "part_numbers": [],
+    "aliases": [
+      "Apple M1 chip"
+    ]
+  },
+  "specifications": {
+    "cpu": {
+      "architecture": "Apple-designed ARM-based CPU",
+      "cores": 8,
+      "performance_cores": 4,
+      "efficiency_cores": 4
+    },
+    "gpu": {
+      "architecture": "Apple-designed integrated GPU",
+      "core_configurations": [
+        7,
+        8
+      ]
+    },
+    "npu": {
+      "name": "Apple Neural Engine",
+      "cores": 16
+    },
+    "memory": {
+      "type": "unified memory",
+      "configurations_gb": [
+        8,
+        16
+      ]
+    },
+    "process_nm": null,
+    "package": null,
+    "transistor_count": null
+  },
+  "relationships": [
+    {
+      "relation_type": "used_by",
+      "target_gtc_id": "GTC-COM-LAPTOP-APPLE-MACBOOK-AIR-M1-2020"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-APPLE-M1-CPU",
+      "field_path": "specifications.cpu",
+      "value": {
+        "architecture": "Apple-designed ARM-based CPU",
+        "cores": 8,
+        "performance_cores": 4,
+        "efficiency_cores": 4
+      },
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Apple technical specifications for the MacBook Air M1 configuration."
+    },
+    {
+      "claim_id": "GTC-CLM-APPLE-M1-GPU",
+      "field_path": "specifications.gpu.core_configurations",
+      "value": [
+        7,
+        8
+      ],
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Apple lists 7-core or 8-core GPU configurations for this product family."
+    },
+    {
+      "claim_id": "GTC-CLM-APPLE-M1-NEURAL",
+      "field_path": "specifications.npu",
+      "value": {
+        "name": "Apple Neural Engine",
+        "cores": 16
+      },
+      "source_id": "SRC-APPLE-MAC-SPECS",
+      "source_url": "https://support.apple.com/en-us/111883",
+      "evidence_type": "manufacturer",
+      "verification_status": "VERIFIED",
+      "retrieved_at": "2026-11-23",
+      "note": "Apple lists a 16-core Neural Engine."
+    }
+  ],
+  "source_ids": [
+    "SRC-APPLE-MAC-SPECS"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "silicon package and die reference",
+      "process node primary technical source",
+      "memory controller details",
+      "I/O controller and power domains",
+      "silicon revision and errata",
+      "full Apple platform technical reference"
+    ]
+  }
+}
