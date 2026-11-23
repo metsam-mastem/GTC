@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
 from gtc_runtime import forbidden_fields, validate_record
-from importers.import_techapi import convert, infer_relative_path, parse_raw_url, manufacturer_id_for
+from importers.import_techapi import convert, infer_relative_path, parse_raw_url, manufacturer_id_for, load_manifest
 
 
 class RuntimeValidationTests(unittest.TestCase):
@@ -78,6 +78,15 @@ class RuntimeValidationTests(unittest.TestCase):
     def test_manufacturer_id_is_stable(self):
         self.assertEqual(manufacturer_id_for("Samsung"), "MFR-SAMSUNG")
         self.assertEqual(manufacturer_id_for("HMD Global"), "MFR-HMD_GLOBAL")
+
+    def test_techapi_manifest_loader_uses_validated_url(self):
+        import json
+        import tempfile
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "manifest.json"
+            path.write_text(json.dumps({"records": [{"raw_url": "https://evil.example/file.json"}]}), encoding="utf-8")
+            with self.assertRaises(ValueError):
+                load_manifest(path, 1)
 
     def test_techapi_import_keeps_upstream_unverified(self):
         raw = {
