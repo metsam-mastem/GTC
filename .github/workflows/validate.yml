@@ -1,0 +1,40 @@
+name: GTC Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gtc-validation-\${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate catalogue and evidence
+        run: python tools/gtc_runtime.py validate --strict
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Build catalogue index
+        run: python tools/gtc_runtime.py build-index
+      - name: Upload generated index
+        uses: actions/upload-artifact@v4
+        with:
+          name: gtc-catalogue-index
+          path: generated/
+          if-no-files-found: error
+          retention-days: 14
