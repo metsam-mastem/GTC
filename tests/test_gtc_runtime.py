@@ -88,6 +88,29 @@ class RuntimeValidationTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 load_manifest(path, 1)
 
+    def test_techapi_import_preserves_additional_upstream_fields_as_claims(self):
+        raw = {
+            "slug": "sample-engineering-device",
+            "name": "Sample Engineering Device",
+            "brand": "Example",
+            "release_date": "2024-03-01",
+            "msrp_usd": 699,
+            "cameras": [{"type": "main", "mp": 50}],
+            "charging_wired_w": 45,
+            "dimensions": {"height_mm": 150, "width_mm": 70, "depth_mm": 8},
+            "raw_gsmarena": {"launch_status": "Discontinued"},
+            "verified": True,
+            "source_urls": ["https://example.org/spec"]
+        }
+        record, _ = convert(raw, "smartphone/example/2024/sample-engineering-device.json", "2026-11-23")
+        by_path = {claim["field_path"]: claim["value"] for claim in record["claims"]}
+        self.assertEqual(by_path["pricing.msrp_usd"], 699)
+        self.assertEqual(by_path["hardware.cameras"], [{"type": "main", "mp": 50}])
+        self.assertEqual(by_path["hardware.charging.wired_max_w"], 45)
+        self.assertEqual(by_path["physical.dimensions"], {"height_mm": 150, "width_mm": 70, "depth_mm": 8})
+        self.assertEqual(by_path["extensions.techapi_fields.raw_gsmarena"], {"launch_status": "Discontinued"})
+        self.assertTrue(all(claim["verification_status"] == "UNVERIFIED" for claim in record["claims"]))
+
     def test_techapi_import_keeps_upstream_unverified(self):
         raw = {
             "slug": "sample-phone",
