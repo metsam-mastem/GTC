@@ -142,7 +142,24 @@ FIELD_PATHS = {
     "tdp": "specifications.tdp",
     "benchmark_results": "specifications.benchmark_results",
     "benchmarks": "specifications.benchmarks",
-    "launch_status": "lifecycle.status"
+    "launch_status": "lifecycle.status",
+    "cpu_name": "hardware.processor.name",
+    "gpu_type": "hardware.gpu.type",
+    "storage_gb": "hardware.storage.capacity_gb",
+    "cuda_cores": "specifications.cuda_cores",
+    "stream_processors": "specifications.stream_processors",
+    "rt_cores": "specifications.rt_cores",
+    "tensor_cores": "specifications.tensor_cores",
+    "memory_gb": "specifications.memory_gb",
+    "memory_type": "specifications.memory_type",
+    "memory_bus_bit": "specifications.memory_bus_bit",
+    "memory_bandwidth_gbps": "specifications.memory_bandwidth_gbps",
+    "base_clock_mhz": "specifications.base_clock_mhz",
+    "boost_clock_mhz": "specifications.boost_clock_mhz",
+    "fp32_tflops": "specifications.fp32_tflops",
+    "blender_score": "specifications.benchmarks.blender_score",
+    "timespy_score": "specifications.benchmarks.timespy_score",
+    "passmark_g3d_mark": "specifications.benchmarks.passmark_g3d_mark"
 }
 METADATA_FIELDS = {"slug", "name", "brand", "manufacturer", "verified", "source_urls"}
 
@@ -239,7 +256,7 @@ def convert(raw: dict[str, Any], source_relative_path: str, retrieved_at: str) -
     for field, value in raw.items():
         if field in METADATA_FIELDS or value is None:
             continue
-        field_path = FIELD_PATHS.get(field, f"extensions.techapi_fields.{field}")
+        field_path = FIELD_PATHS.get(field, f"specifications.{field}" if entity_type == "component" else f"extensions.techapi_fields.{field}")
         if field == "release_date" and not (
             isinstance(value, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", value)
         ):
