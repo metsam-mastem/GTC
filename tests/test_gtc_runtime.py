@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
 from gtc_runtime import forbidden_fields, validate_record
-from importers.import_techapi import convert
+from importers.import_techapi import convert, infer_relative_path
 
 
 class RuntimeValidationTests(unittest.TestCase):
@@ -54,6 +54,10 @@ class RuntimeValidationTests(unittest.TestCase):
 
     def test_nested_personal_fields_detected(self):
         self.assertTrue(forbidden_fields({"nested": [{"current_owner": "x"}]}))
+
+    def test_single_file_path_category_inference(self):
+        relative = infer_relative_path(Path("/tmp/TechAPI/data/smartphone/apple/iphone.json"), None)
+        self.assertEqual(relative, "smartphone/apple/iphone.json")
 
     def test_techapi_import_keeps_upstream_unverified(self):
         raw = {

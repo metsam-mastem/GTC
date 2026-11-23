@@ -1,0 +1,14 @@
+{
+  "observation_id":"GTC-OBS-REPLACE",
+  "entity_gtc_id":"GTC-DEVICE-REPLACE",
+  "hardware_revision":null,
+  "observation_type":"visual_inspection",
+  "method":"Describe exact inspection steps, equipment, test points inspected and limitations.",
+  "instrument":null,
+  "conditions":{"ambient_temperature_c":null,"power_state":"unpowered"},
+  "observed_at":"YYYY-MM-DDThh:mm:ssZ",
+  "result":{"observations":[]},
+  "asset_ids":[],
+  "review_status":"DRAFT",
+  "review_note":"Do not promote to verified claim until reviewed."
+}

@@ -181,6 +181,16 @@ def validate_record(record: Any, source_ids: set[str], filename: str = "<memory>
 def validate_catalog(root: Path = ROOT) -> tuple[list[str], list[str], list[Path]]:
     source_registry, errors = load_sources(root)
     known_sources = set(source_registry)
+    taxonomy_payload = read_json(root / "data/registry/taxonomy.json")
+    known_taxonomies = {x.get("taxonomy_id") for x in taxonomy_payload.get("taxonomy", []) if isinstance(x, dict)}
+    schema_dir = root / "schemas"
+    for schema_path in sorted(schema_dir.glob("*.schema.json")) if schema_dir.exists() else []:
+        try:
+            schema_data = read_json(schema_path)
+            if schema_data.get("$schema") != "https://json-schema.org/draft/2020-12/schema":
+                errors.append(f"{schema_path.relative_to(root)} must declare JSON Schema Draft 2020-12")
+        except (OSError, json.JSONDecodeError) as exc:
+            errors.append(f"{schema_path.relative_to(root)} invalid JSON Schema JSON: {exc}")
     paths = record_files(root)
     records: list[tuple[Path, dict[str, Any]]] = []
     id_to_path: dict[str, Path] = {}
@@ -196,6 +206,9 @@ def validate_catalog(root: Path = ROOT) -> tuple[list[str], list[str], list[Path
         errors.extend(validate_record(record, known_sources, str(path.relative_to(root))))
         if not isinstance(record, dict):
             continue
+        for taxonomy_id in record.get("taxonomy_ids", []):
+            if taxonomy_id not in known_taxonomies:
+                errors.append(f"{path.relative_to(root)} unknown taxonomy_id {taxonomy_id}")
         gtc_id = record.get("gtc_id")
         if isinstance(gtc_id, str):
             if gtc_id in id_to_path:
@@ -279,8 +292,12 @@ def build_index(root: Path = ROOT) -> tuple[Path, Path]:
     index_path, coverage_path = generated / "catalog-index.json", generated / "coverage.json"
     index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     coverage_path.write_text(json.dumps(coverage, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    return index_path, coverage_path
-
+    site = root / "site"
+    site.mkdir(parents=True, exist_ok=True)
+    site_catalog = site / "catalog.json"
+    site_payload = {"schema_version": "1.0.0", "generated_at": timestamp, "record_count": len(records), "records": records}
+    site_catalog.write_text(json.dumps(site_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return index_path, coverage_path, site_catalog
 
 def source_audit(root: Path = ROOT, timeout: int = 8) -> Path:
     sources, errors = load_sources(root)
@@ -353,11 +370,11 @@ def main() -> int:
         return 0
     if args.command == "build-index":
         try:
-            index, coverage = build_index()
+            index, coverage, site_catalog = build_index()
         except ValueError as exc:
             print(f"FAIL: {exc}")
             return 1
-        print(f"PASS: {index.relative_to(ROOT)}; {coverage.relative_to(ROOT)}")
+        print(f"PASS: {index.relative_to(ROOT)}; {coverage.relative_to(ROOT)}; {site_catalog.relative_to(ROOT)}")
         return 0
     if args.command == "source-audit":
         try:

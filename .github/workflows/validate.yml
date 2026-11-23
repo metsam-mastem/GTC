@@ -35,6 +35,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: gtc-catalogue-index
-          path: generated/
+          path: |
+            generated/
+            site/catalog.json
           if-no-files-found: error
           retention-days: 14

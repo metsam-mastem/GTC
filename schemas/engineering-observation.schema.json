@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gtc.example/schemas/engineering-observation.schema.json",
+  "title": "GTC Engineering Observation",
+  "type": "object",
+  "required": ["observation_id","entity_gtc_id","hardware_revision","observation_type","method","observed_at","result","review_status"],
+  "properties": {
+    "observation_id": {"type":"string","pattern":"^GTC-OBS-[A-Z0-9-]+$"},
+    "entity_gtc_id": {"type":"string","pattern":"^GTC-[A-Z0-9-]+$"},
+    "hardware_revision": {"type":["string","null"]},
+    "observation_type": {"enum":["visual_inspection","teardown","component_identification","continuity_test","voltage_measurement","current_measurement","thermal_test","signal_capture","firmware_inventory","software_test","repair_test","other"]},
+    "method": {"type":"string","minLength":10},
+    "instrument": {"type":["object","null"]},
+    "conditions": {"type":"object"},
+    "observed_at": {"type":"string","format":"date-time"},
+    "result": {"type":"object"},
+    "asset_ids": {"type":"array","items":{"type":"string"}},
+    "review_status": {"enum":["DRAFT","REPRODUCIBLE","REVIEWED","DISPUTED","REJECTED"]},
+    "review_note": {"type":"string"}
+  },
+  "additionalProperties": false
+}

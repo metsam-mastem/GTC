@@ -39,6 +39,18 @@ def infer_category(relative_path: str) -> str | None:
     return next((part.lower() for part in Path(relative_path).parts if part.lower() in CATEGORY_MAP), None)
 
 
+def infer_relative_path(path: Path, source_root: Path | None) -> str:
+    resolved = path.resolve()
+    if source_root and resolved.is_relative_to(source_root):
+        return resolved.relative_to(source_root).as_posix()
+    try:
+        parts = resolved.parts
+        index = parts.index("data")
+        return Path(*parts[index + 1:]).as_posix()
+    except ValueError:
+        return path.name
+
+
 def convert(raw: dict[str, Any], source_relative_path: str, retrieved_at: str) -> tuple[dict[str, Any], Path]:
     category = infer_category(source_relative_path)
     if category not in CATEGORY_MAP:
@@ -184,7 +196,7 @@ def main() -> int:
             raw = json.loads(path.read_text(encoding="utf-8"))
             if not isinstance(raw, dict):
                 raise ValueError("record must be a JSON object")
-            relative = path.relative_to(source_root).as_posix() if source_root and path.is_relative_to(source_root) else path.name
+            relative = infer_relative_path(path, source_root)
             record, target_relative = convert(raw, relative, today)
             target = output_root / target_relative
             if target.exists() and not args.overwrite:

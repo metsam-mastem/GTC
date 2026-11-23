@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gtc.example/schemas/asset.schema.json",
+  "title": "GTC Evidence Asset",
+  "type": "object",
+  "required": ["asset_id","entity_gtc_id","asset_type","title","source_url","rights_status","retrieved_at"],
+  "properties": {
+    "asset_id": {"type":"string","pattern":"^GTC-AST-[A-Z0-9-]+$"},
+    "entity_gtc_id": {"type":"string","pattern":"^GTC-[A-Z0-9-]+$"},
+    "asset_type": {"enum":["product_photo","teardown_photo","pcb_photo","schematic","boardview","service_manual","datasheet","firmware","log","measurement","diagram","video","other"]},
+    "title": {"type":"string"},
+    "creator": {"type":["string","null"]},
+    "source_url": {"type":"string","format":"uri"},
+    "license": {"type":["string","null"]},
+    "attribution": {"type":["string","null"]},
+    "rights_status": {"enum":["redistributable","link_only","permission_required","unknown","restricted"]},
+    "sha256": {"type":["string","null"],"pattern":"^[a-fA-F0-9]{64}$"},
+    "mime_type": {"type":["string","null"]},
+    "retrieved_at": {"type":"string","format":"date"},
+    "notes": {"type":"string"}
+  },
+  "additionalProperties": false
+}

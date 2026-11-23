@@ -21,7 +21,8 @@ GTC is a modular, source-traceable atlas for the history, identity, hardware, so
 - tools/ — local runtime and controlled import adapters.
 - templates/ — reusable dossier templates.
 - tests/ — runtime tests.
-- .github/workflows/ — automated validation and source monitoring.
+- site/ — Persian responsive web atlas and offline-capable PWA shell.
+- .github/workflows/ — automated validation, source monitoring and Pages deployment.
 - generated/ — derived local/CI outputs, not canonical source data.
 
 ## Run locally
@@ -30,6 +31,7 @@ Requires Python 3.10+ and no third-party packages.
     python tools/gtc_runtime.py validate --strict
     python tools/gtc_runtime.py build-index
     python -m unittest discover -s tests -v
+    python -m http.server 8000 --directory site
 
 Import selected local TechAPI JSON records after reviewing its CC BY-SA 4.0 data terms:
 
