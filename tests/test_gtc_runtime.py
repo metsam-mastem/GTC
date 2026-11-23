@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
 from gtc_runtime import forbidden_fields, validate_record
-from importers.import_techapi import convert, infer_relative_path
+from importers.import_techapi import convert, infer_relative_path, parse_raw_url, manufacturer_id_for
 
 
 class RuntimeValidationTests(unittest.TestCase):
@@ -66,6 +66,18 @@ class RuntimeValidationTests(unittest.TestCase):
     def test_single_file_path_category_inference(self):
         relative = infer_relative_path(Path("/tmp/TechAPI/data/smartphone/apple/iphone.json"), None)
         self.assertEqual(relative, "smartphone/apple/iphone.json")
+
+    def test_raw_url_is_limited_to_approved_repository(self):
+        url = "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/smartphone/apple/iphone.json"
+        self.assertEqual(parse_raw_url(url), "smartphone/apple/iphone.json")
+        with self.assertRaises(ValueError):
+            parse_raw_url("https://evil.example/data/smartphone/phone.json")
+        with self.assertRaises(ValueError):
+            parse_raw_url("https://raw.githubusercontent.com/other/repo/main/data/smartphone/phone.json")
+
+    def test_manufacturer_id_is_stable(self):
+        self.assertEqual(manufacturer_id_for("Samsung"), "MFR-SAMSUNG")
+        self.assertEqual(manufacturer_id_for("HMD Global"), "MFR-HMD_GLOBAL")
 
     def test_techapi_import_keeps_upstream_unverified(self):
         raw = {
