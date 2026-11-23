@@ -88,6 +88,92 @@ def manufacturer_id_for(name: str) -> str:
     return "MFR-" + slugify(name).replace("-", "_").upper()
 
 
+FIELD_PATHS = {
+    "base_model_slug": "identity.base_model_slug",
+    "model_codes": "identity.model_codes",
+    "model_code": "identity.model_codes",
+    "codenames": "identity.codenames",
+    "aliases": "identity.aliases",
+    "part_numbers": "identity.part_numbers",
+    "release_date": "lifecycle.release_date",
+    "ram_gb": "hardware.memory.ram_gb",
+    "battery_mah": "hardware.battery.capacity_mah",
+    "weight_g": "physical.mass_g",
+    "dimensions": "physical.dimensions",
+    "ip_rating": "physical.ingress_protection_rating",
+    "soc": "hardware.soc_slug",
+    "display": "hardware.display",
+    "cameras": "hardware.cameras",
+    "connectivity": "hardware.connectivity",
+    "charging_wired_w": "hardware.charging.wired_max_w",
+    "charging_wireless_w": "hardware.charging.wireless_max_w",
+    "storage_options_gb": "hardware.storage.options_gb",
+    "os": "software.operating_system",
+    "os_version": "software.version_at_launch",
+    "cpu_config": "specifications.cpu",
+    "gpu_name": "specifications.gpu",
+    "process_nm": "specifications.process_nm",
+    "process_node": "specifications.process_node",
+    "npu_tops": "specifications.npu_tops",
+    "msrp_usd": "pricing.msrp_usd",
+    "segment": "specifications.segment",
+    "architecture": "specifications.architecture",
+    "socket": "specifications.socket",
+    "cores": "specifications.cores",
+    "threads": "specifications.threads",
+    "p_cores": "specifications.performance_cores",
+    "e_cores": "specifications.efficiency_cores",
+    "base_clock_ghz": "specifications.base_clock_ghz",
+    "boost_clock_ghz": "specifications.boost_clock_ghz",
+    "l3_cache_mb": "specifications.l3_cache_mb",
+    "tdp_w": "specifications.tdp_w",
+    "max_tdp_w": "specifications.max_tdp_w",
+    "integrated_graphics": "specifications.integrated_graphics",
+    "memory_support": "specifications.memory_support",
+    "raw_chipset": "specifications.raw_chipset",
+    "clock_mhz": "specifications.clock_mhz",
+    "gpu_name": "specifications.gpu",
+    "gpu_config": "specifications.gpu",
+    "memory_type": "specifications.memory_type",
+    "channels": "specifications.channels",
+    "bandwidth_gbps": "specifications.bandwidth_gbps",
+    "interface": "specifications.interface",
+    "pcie_version": "specifications.pcie_version",
+    "tdp": "specifications.tdp",
+    "benchmark_results": "specifications.benchmark_results",
+    "benchmarks": "specifications.benchmarks",
+    "launch_status": "lifecycle.status"
+}
+METADATA_FIELDS = {"slug", "name", "brand", "manufacturer", "verified", "source_urls"}
+
+
+def manufacturer_name_for(value: Any) -> str:
+    raw = str(value or "unknown").strip()
+    known = {
+        "apple": "Apple", "samsung": "Samsung", "nokia": "Nokia",
+        "google": "Google", "xiaomi": "Xiaomi", "qualcomm": "Qualcomm",
+        "amd": "AMD", "nvidia": "NVIDIA", "intel": "Intel",
+        "lenovo": "Lenovo", "motorola": "Motorola", "huawei": "Huawei",
+        "honor": "HONOR", "oneplus": "OnePlus", "oppo": "OPPO",
+        "vivo": "vivo", "sony": "Sony", "htc": "HTC", "acer": "Acer",
+        "asus": "ASUS", "dell": "Dell", "hp": "HP", "ibm": "IBM",
+        "broadcom": "Broadcom", "mediatek": "MediaTek"
+    }
+    return known.get(raw.lower(), raw)
+
+
+def set_nested(target: dict[str, Any], dotted_path: str, value: Any) -> None:
+    parts = dotted_path.split(".")
+    cursor = target
+    for part in parts[:-1]:
+        child = cursor.get(part)
+        if not isinstance(child, dict):
+            child = {}
+            cursor[part] = child
+        cursor = child
+    cursor[parts[-1]] = value
+
+
 def convert(raw: dict[str, Any], source_relative_path: str, retrieved_at: str) -> tuple[dict[str, Any], Path]:
     category = infer_category(source_relative_path)
     if category not in CATEGORY_MAP:
@@ -95,104 +181,47 @@ def convert(raw: dict[str, Any], source_relative_path: str, retrieved_at: str) -
     target_dir, taxonomy, entity_type = CATEGORY_MAP[category]
     slug = str(raw.get("slug") or Path(source_relative_path).stem)
     name = str(raw.get("name") or slug)
-    brand = str(raw.get("brand") or raw.get("manufacturer") or "unknown")
+    manufacturer_raw = raw.get("brand") or raw.get("manufacturer") or "unknown"
+    manufacturer_name = manufacturer_name_for(manufacturer_raw)
+    manufacturer_id = manufacturer_id_for(manufacturer_name)
     gtc_id = "GTC-IMP-TECHAPI-" + slugify(slug).upper()
-    source_url = UPSTREAM + source_relative_path.replace("\\", "/")
+    source_url = UPSTREAM + source_relative_path.replace("\\\\", "/")
     upstream_urls = raw.get("source_urls", [])
     if not isinstance(upstream_urls, list):
         upstream_urls = []
     upstream_urls = [x for x in upstream_urls if isinstance(x, str) and x.startswith(("http://", "https://"))]
-
-    claims = []
-    mapping = [
-        ("release_date", "lifecycle.release_date"),
-        ("ram_gb", "hardware.memory.ram_gb"),
-        ("battery_mah", "hardware.battery.capacity_mah"),
-        ("weight_g", "physical.mass_g"),
-        ("soc", "hardware.soc_slug"),
-        ("display", "hardware.display"),
-        ("connectivity", "hardware.connectivity"),
-        ("os", "software.operating_system"),
-        ("cpu_config", "specifications.cpu"),
-        ("gpu_name", "specifications.gpu"),
-        ("process_nm", "specifications.process_nm"),
-        ("npu_tops", "specifications.npu_tops"),
-        ("storage_options_gb", "hardware.storage.options_gb")
-    ]
-    for field, field_path in mapping:
-        if raw.get(field) is not None:
-            claims.append({
-                "claim_id": f"GTC-CLM-TECHAPI-{slugify(slug + '-' + field).upper()}",
-                "field_path": field_path,
-                "value": raw[field],
-                "source_id": SOURCE_ID,
-                "source_url": source_url,
-                "supporting_urls": upstream_urls,
-                "evidence_type": "curated_dataset",
-                "verification_status": "UNVERIFIED",
-                "retrieved_at": retrieved_at,
-                "upstream_verification": raw.get("verified") if isinstance(raw.get("verified"), bool) else None,
-                "note": "Imported from TechAPI. Upstream verified is recorded for context only; GTC verification remains UNVERIFIED."
-            })
-    claims.append({
-        "claim_id": f"GTC-CLM-TECHAPI-{slugify(slug + '-source-record').upper()}",
-        "field_path": "extensions.upstream_record",
-        "value": {"dataset": "GetTechAPI/TechAPI", "path": source_relative_path, "slug": slug},
-        "source_id": SOURCE_ID,
-        "source_url": source_url,
-        "supporting_urls": upstream_urls,
-        "evidence_type": "curated_dataset",
-        "verification_status": "UNVERIFIED",
-        "retrieved_at": retrieved_at,
-        "upstream_verification": raw.get("verified") if isinstance(raw.get("verified"), bool) else None,
-        "note": "Imported source record pointer; not an independent validation."
-    })
 
     record: dict[str, Any] = {
         "schema_version": "1.0.0",
         "gtc_id": gtc_id,
         "entity_type": entity_type,
         "canonical_name": name,
-        "manufacturer": {
-            "manufacturer_id": manufacturer_id_for(brand),
-            "name": brand
-        },
+        "manufacturer": {"manufacturer_id": manufacturer_id, "name": manufacturer_name},
         "taxonomy_ids": ["components", taxonomy] if entity_type == "component" else [taxonomy],
         "identity": {
             "model_codes": raw.get("model_codes", []) if isinstance(raw.get("model_codes"), list) else [],
             "codenames": raw.get("codenames", []) if isinstance(raw.get("codenames"), list) else [],
-            "aliases": [],
+            "aliases": raw.get("aliases", []) if isinstance(raw.get("aliases"), list) else [],
             "part_numbers": raw.get("part_numbers", []) if isinstance(raw.get("part_numbers"), list) else []
         },
         "lifecycle": {
             "release_year": int(str(raw.get("release_date"))[:4]) if raw.get("release_date") and str(raw.get("release_date"))[:4].isdigit() else None,
-            "release_date": raw.get("release_date") if isinstance(raw.get("release_date"), str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw["release_date"]) else None,
+            "release_date": raw.get("release_date") if isinstance(raw.get("release_date"), str) and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", raw["release_date"]) else None,
             "announcement_date": None,
             "discontinued_date": None,
             "status": "unknown",
             "events": []
         },
         "physical": {"mass_g": raw.get("weight_g")},
-        "hardware": {
-            "soc_slug": raw.get("soc"),
-            "memory": {"ram_gb": raw.get("ram_gb")},
-            "storage": {"options_gb": raw.get("storage_options_gb", [])},
-            "display": raw.get("display"),
-            "battery": {"capacity_mah": raw.get("battery_mah")},
-            "connectivity": raw.get("connectivity")
-        },
-        "software": {"operating_system": raw.get("os")},
-        "specifications": {
-            "cpu": raw.get("cpu_config"),
-            "gpu": raw.get("gpu_name"),
-            "process_nm": raw.get("process_nm"),
-            "npu_tops": raw.get("npu_tops")
-        },
+        "hardware": {},
+        "software": {},
+        "specifications": {},
+        "pricing": {},
         "relationships": [],
-        "claims": claims,
+        "claims": [],
         "source_ids": [SOURCE_ID],
         "completeness": {
-            "state": "IDENTIFIED" if len(claims) <= 1 else "BASIC_PROFILE",
+            "state": "IDENTIFIED",
             "missing_sections": ["independent GTC verification", "variant resolution", "engineering documentation"]
         },
         "extensions": {
@@ -205,8 +234,58 @@ def convert(raw: dict[str, Any], source_relative_path: str, retrieved_at: str) -
             "imported_at": retrieved_at
         }
     }
-    return record, Path(target_dir) / f"{slugify(slug)}.json"
 
+    claims = []
+    for field, value in raw.items():
+        if field in METADATA_FIELDS or value is None:
+            continue
+        field_path = FIELD_PATHS.get(field, f"extensions.techapi_fields.{field}")
+        if field == "release_date" and not (
+            isinstance(value, str) and re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", value)
+        ):
+            field_path = "extensions.techapi_fields.release_date_raw"
+        set_nested(record, field_path, value)
+        claim_suffix = slugify(slug + "-" + field).upper()
+        claims.append({
+            "claim_id": f"GTC-CLM-TECHAPI-{claim_suffix}",
+            "field_path": field_path,
+            "value": value,
+            "source_id": SOURCE_ID,
+            "source_url": source_url,
+            "supporting_urls": upstream_urls,
+            "evidence_type": "curated_dataset",
+            "verification_status": "UNVERIFIED",
+            "retrieved_at": retrieved_at,
+            "upstream_verification": raw.get("verified") if isinstance(raw.get("verified"), bool) else None,
+            "note": "Imported from TechAPI. This upstream dataset claim remains UNVERIFIED in GTC until independently reviewed."
+        })
+
+    if not claims:
+        raise ValueError(f"TechAPI record {slug} contains no importable factual fields")
+    pointer_claim = {
+        "claim_id": f"GTC-CLM-TECHAPI-{slugify(slug + '-source-record').upper()}",
+        "field_path": "extensions.upstream_record",
+        "value": {"dataset": "GetTechAPI/TechAPI", "path": source_relative_path, "slug": slug},
+        "source_id": SOURCE_ID,
+        "source_url": source_url,
+        "supporting_urls": upstream_urls,
+        "evidence_type": "curated_dataset",
+        "verification_status": "UNVERIFIED",
+        "retrieved_at": retrieved_at,
+        "upstream_verification": raw.get("verified") if isinstance(raw.get("verified"), bool) else None,
+        "note": "Upstream source record pointer; not an independent validation."
+    }
+    claims.append(pointer_claim)
+    record["claims"] = claims
+    record["completeness"]["state"] = "BASIC_PROFILE" if len(claims) > 2 else "IDENTIFIED"
+    record["completeness"]["missing_sections"] = [
+        "independent GTC verification", "regional and board variant resolution",
+        "hardware architecture and component inventory", "software and firmware evidence",
+        "repair and engineering documentation"
+    ]
+    if entity_type == "component":
+        record["component_type"] = category
+    return record, Path(target_dir) / f"{slugify(slug)}.json"
 
 def load_manifest(path: Path, limit: int) -> list[tuple[dict[str, Any], str, str]]:
     manifest = json.loads(path.read_text(encoding="utf-8"))
