@@ -1,0 +1,629 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-RYZEN-9-9950X",
+  "entity_type": "component",
+  "canonical_name": "AMD Ryzen 9 9950X",
+  "manufacturer": {
+    "manufacturer_id": "MFR-AMD",
+    "name": "AMD"
+  },
+  "taxonomy_ids": [
+    "components",
+    "components.cpu"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": []
+  },
+  "lifecycle": {
+    "release_year": 2024,
+    "release_date": "2024-08-31",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {},
+  "hardware": {},
+  "software": {},
+  "specifications": {
+    "segment": "desktop",
+    "architecture": "Zen 5",
+    "socket": "AM5",
+    "process_node": "TSMC N4",
+    "cores": 16,
+    "threads": 32,
+    "base_clock_ghz": 4.3,
+    "boost_clock_ghz": 5.7,
+    "l3_cache_mb": 64,
+    "tdp_w": 170,
+    "max_tdp_w": 200,
+    "integrated_graphics": "AMD Radeon Graphics (2CU)",
+    "memory_support": "DDR5-5600",
+    "cinebench_r23_single": 2300,
+    "cinebench_r23_multi": 42000,
+    "cinebench_2024_single": 137,
+    "cinebench_2024_multi": 2287,
+    "geekbench_single": 3200,
+    "geekbench_multi": 22000,
+    "cinebench_r15_single": 344,
+    "cinebench_r15_multi": 6335,
+    "cinebench_r10_single": 9402,
+    "cinebench_r10_multi": 71611,
+    "passmark_single": 4729,
+    "passmark_cpu_mark": 65756
+  },
+  "pricing": {
+    "msrp_usd": 649
+  },
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "2024-08-31",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-SEGMENT",
+      "field_path": "specifications.segment",
+      "value": "desktop",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-ARCHITECTURE",
+      "field_path": "specifications.architecture",
+      "value": "Zen 5",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-SOCKET",
+      "field_path": "specifications.socket",
+      "value": "AM5",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-PROCESS-NODE",
+      "field_path": "specifications.process_node",
+      "value": "TSMC N4",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-CORES",
+      "field_path": "specifications.cores",
+      "value": 16,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-THREADS",
+      "field_path": "specifications.threads",
+      "value": 32,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-BASE-CLOCK-GHZ",
+      "field_path": "specifications.base_clock_ghz",
+      "value": 4.3,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-BOOST-CLOCK-GHZ",
+      "field_path": "specifications.boost_clock_ghz",
+      "value": 5.7,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-L3-CACHE-MB",
+      "field_path": "specifications.l3_cache_mb",
+      "value": 64,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-TDP-W",
+      "field_path": "specifications.tdp_w",
+      "value": 170,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-MAX-TDP-W",
+      "field_path": "specifications.max_tdp_w",
+      "value": 200,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-INTEGRATED-GRAPHICS",
+      "field_path": "specifications.integrated_graphics",
+      "value": "AMD Radeon Graphics (2CU)",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-MEMORY-SUPPORT",
+      "field_path": "specifications.memory_support",
+      "value": "DDR5-5600",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-CINEBENCH-R23-SINGLE",
+      "field_path": "specifications.cinebench_r23_single",
+      "value": 2300,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-CINEBENCH-R23-MULTI",
+      "field_path": "specifications.cinebench_r23_multi",
+      "value": 42000,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-CINEBENCH-2024-SINGLE",
+      "field_path": "specifications.cinebench_2024_single",
+      "value": 137,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-CINEBENCH-2024-MULTI",
+      "field_path": "specifications.cinebench_2024_multi",
+      "value": 2287,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-GEEKBENCH-SINGLE",
+      "field_path": "specifications.geekbench_single",
+      "value": 3200,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-GEEKBENCH-MULTI",
+      "field_path": "specifications.geekbench_multi",
+      "value": 22000,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-CINEBENCH-R15-SINGLE",
+      "field_path": "specifications.cinebench_r15_single",
+      "value": 344,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-CINEBENCH-R15-MULTI",
+      "field_path": "specifications.cinebench_r15_multi",
+      "value": 6335,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-CINEBENCH-R10-SINGLE",
+      "field_path": "specifications.cinebench_r10_single",
+      "value": 9402,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-CINEBENCH-R10-MULTI",
+      "field_path": "specifications.cinebench_r10_multi",
+      "value": 71611,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-PASSMARK-SINGLE",
+      "field_path": "specifications.passmark_single",
+      "value": 4729,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-PASSMARK-CPU-MARK",
+      "field_path": "specifications.passmark_cpu_mark",
+      "value": 65756,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-MSRP-USD",
+      "field_path": "pricing.msrp_usd",
+      "value": 649,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-RYZEN-9-9950X-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "cpu/amd/2024/consumer/ryzen-9-9950x.json",
+        "slug": "ryzen-9-9950x"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "supporting_urls": [
+        "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+        "https://en.wikipedia.org/wiki/Zen_5",
+        "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+        "https://technical.city/en/cpu/Ryzen-9-9950X",
+        "https://www.topcpu.net/en/cpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "cpu/amd/2024/consumer/ryzen-9-9950x.json",
+    "upstream_source_urls": [
+      "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+      "https://en.wikipedia.org/wiki/Zen_5",
+      "https://www.cpubenchmark.net/cpu.php?id=6211&cpu=AMD+Ryzen+9+9950X",
+      "https://technical.city/en/cpu/Ryzen-9-9950X",
+      "https://www.topcpu.net/en/cpu-r/"
+    ],
+    "upstream_verified": true,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23"
+  },
+  "component_type": "cpu"
+}

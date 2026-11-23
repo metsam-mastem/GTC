@@ -20,7 +20,7 @@
       },
       "ingestion_policy": "sharealike",
       "coverage": "Curated smartphones, tablets, watches, PDAs, laptops, monitors, brands, SoCs, CPUs and GPUs",
-      "limitations": "Curated subset, not exhaustive; record-level sources vary. Upstream verified does not imply GTC verified. Repository is very large; avoid full clone in routine workflows.",
+      "limitations": "Curated subset, not exhaustive; record-level sources vary. Upstream verified does not imply GTC verified. Repository is very large; avoid full clone in routine workflows. GTC seed batch 2026-11-23 includes selected records across phones, tablets, wearables, laptops, SoCs, CPUs and GPUs; the source repository remains larger and not exhaustive.",
       "checked_at": "2026-11-23",
       "audit_enabled": true
     },

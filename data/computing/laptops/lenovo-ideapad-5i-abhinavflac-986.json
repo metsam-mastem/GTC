@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986",
+  "entity_type": "device_model",
+  "canonical_name": "Lenovo IdeaPad 5i 83DT004SIN",
+  "manufacturer": {
+    "manufacturer_id": "MFR-LENOVO",
+    "name": "Lenovo"
+  },
+  "taxonomy_ids": [
+    "computing.laptop"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": [],
+    "base_model_slug": "lenovo-ideapad-5i"
+  },
+  "lifecycle": {
+    "release_year": 2024,
+    "release_date": "2024-01-01",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {},
+  "hardware": {
+    "memory": {
+      "ram_gb": 16
+    },
+    "processor": {
+      "name": "Intel Core 5 120U"
+    },
+    "gpu": {
+      "type": "Integrated"
+    },
+    "storage": {
+      "capacity_gb": 512
+    },
+    "display": {
+      "size_inch": 14,
+      "resolution": "1920x1200",
+      "ppi": 162
+    }
+  },
+  "software": {
+    "operating_system": "Windows"
+  },
+  "specifications": {
+    "gpu": "Intel Integrated Graphics Integrated Graphics"
+  },
+  "pricing": {
+    "msrp_usd": 843
+  },
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-BASE-MODEL-SLUG",
+      "field_path": "identity.base_model_slug",
+      "value": "lenovo-ideapad-5i",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "2024-01-01",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-RAM-GB",
+      "field_path": "hardware.memory.ram_gb",
+      "value": 16,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-OS",
+      "field_path": "software.operating_system",
+      "value": "Windows",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-MSRP-USD",
+      "field_path": "pricing.msrp_usd",
+      "value": 843,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-DEVICE-CATEGORY",
+      "field_path": "extensions.techapi_fields.device_category",
+      "value": "General",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-CPU-NAME",
+      "field_path": "hardware.processor.name",
+      "value": "Intel Core 5 120U",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-GPU-NAME",
+      "field_path": "specifications.gpu",
+      "value": "Intel Integrated Graphics Integrated Graphics",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-GPU-TYPE",
+      "field_path": "hardware.gpu.type",
+      "value": "Integrated",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-STORAGE-GB",
+      "field_path": "hardware.storage.capacity_gb",
+      "value": 512,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-DISPLAY",
+      "field_path": "hardware.display",
+      "value": {
+        "size_inch": 14,
+        "resolution": "1920x1200",
+        "ppi": 162
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-VARIANT",
+      "field_path": "extensions.techapi_fields.variant",
+      "value": {
+        "source_dataset": "abhinavflac/laptops-specs-dataset",
+        "source_row": 986
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+        "slug": "lenovo-ideapad-5i-abhinavflac-986"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "supporting_urls": [
+        "https://github.com/abhinavflac/laptops-specs-dataset"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+    "upstream_source_urls": [
+      "https://github.com/abhinavflac/laptops-specs-dataset"
+    ],
+    "upstream_verified": false,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23",
+    "techapi_fields": {
+      "device_category": "General",
+      "variant": {
+        "source_dataset": "abhinavflac/laptops-specs-dataset",
+        "source_row": 986
+      }
+    }
+  }
+}

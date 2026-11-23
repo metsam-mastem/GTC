@@ -1,0 +1,325 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-REDMI-NOTE-14-PRO-5G",
+  "entity_type": "device_model",
+  "canonical_name": "Redmi Note 14 Pro+ 5G",
+  "manufacturer": {
+    "manufacturer_id": "MFR-XIAOMI",
+    "name": "Xiaomi"
+  },
+  "taxonomy_ids": [
+    "mobile.smartphone"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": [],
+    "base_model_slug": "redmi-note-14-pro-5g"
+  },
+  "lifecycle": {
+    "release_year": 2024,
+    "release_date": "2024-01-01",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {
+    "mass_g": 205
+  },
+  "hardware": {
+    "soc_slug": "snapdragon-7s-gen-3",
+    "memory": {
+      "ram_gb": 16
+    },
+    "storage": {
+      "options_gb": [
+        128,
+        256,
+        512
+      ]
+    },
+    "display": {
+      "size_inch": 6.67,
+      "resolution": null,
+      "refresh_hz": null,
+      "type": null
+    },
+    "cameras": [
+      {
+        "type": "main",
+        "mp": 200
+      },
+      {
+        "type": "selfie",
+        "mp": 16
+      }
+    ],
+    "battery": {
+      "capacity_mah": 5110
+    },
+    "connectivity": {
+      "wifi": null,
+      "bluetooth": null,
+      "nfc": null,
+      "usb": null
+    }
+  },
+  "software": {
+    "operating_system": "Android"
+  },
+  "specifications": {},
+  "pricing": {
+    "msrp_usd": 375
+  },
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-BASE-MODEL-SLUG",
+      "field_path": "identity.base_model_slug",
+      "value": "redmi-note-14-pro-5g",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-SOC",
+      "field_path": "hardware.soc_slug",
+      "value": "snapdragon-7s-gen-3",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "2024-01-01",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-MSRP-USD",
+      "field_path": "pricing.msrp_usd",
+      "value": 375,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-RAM-GB",
+      "field_path": "hardware.memory.ram_gb",
+      "value": 16,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-STORAGE-OPTIONS-GB",
+      "field_path": "hardware.storage.options_gb",
+      "value": [
+        128,
+        256,
+        512
+      ],
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-DISPLAY",
+      "field_path": "hardware.display",
+      "value": {
+        "size_inch": 6.67,
+        "resolution": null,
+        "refresh_hz": null,
+        "type": null
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-CAMERAS",
+      "field_path": "hardware.cameras",
+      "value": [
+        {
+          "type": "main",
+          "mp": 200
+        },
+        {
+          "type": "selfie",
+          "mp": 16
+        }
+      ],
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-BATTERY-MAH",
+      "field_path": "hardware.battery.capacity_mah",
+      "value": 5110,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-WEIGHT-G",
+      "field_path": "physical.mass_g",
+      "value": 205,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-OS",
+      "field_path": "software.operating_system",
+      "value": "Android",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-CONNECTIVITY",
+      "field_path": "hardware.connectivity",
+      "value": {
+        "wifi": null,
+        "bluetooth": null,
+        "nfc": null,
+        "usb": null
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-REDMI-NOTE-14-PRO-5G-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+        "slug": "redmi-note-14-pro-5g"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+    "upstream_source_urls": [
+      "https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025"
+    ],
+    "upstream_verified": false,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-QUALCOMM-SNAPDRAGON-8-GEN-3-SM8650-AC",
+  "entity_type": "component",
+  "canonical_name": "Qualcomm Snapdragon 8 Gen 3 SM8650-AC",
+  "manufacturer": {
+    "manufacturer_id": "MFR-QUALCOMM",
+    "name": "Qualcomm"
+  },
+  "taxonomy_ids": [
+    "components",
+    "components.soc"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": []
+  },
+  "lifecycle": {
+    "release_year": 2024,
+    "release_date": "2024-01-01",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {},
+  "hardware": {},
+  "software": {},
+  "specifications": {
+    "process_nm": 4,
+    "gpu": "Qualcomm Adreno 750",
+    "raw_chipset": "Qualcomm Snapdragon 8 Gen 3 SM8650-AC (Lanai), 2024, 64 bit, octa-core, 12288 Kbyte L3, 4 nm, Qualcomm Adreno 750 GPU"
+  },
+  "pricing": {},
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-QUALCOMM-SNAPDRAGON-8-GEN-3-SM8650-AC-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "2024-01-01",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/soc/qualcomm/2024/qualcomm-snapdragon-8-gen-3-sm8650-ac.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=24953"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-QUALCOMM-SNAPDRAGON-8-GEN-3-SM8650-AC-PROCESS-NM",
+      "field_path": "specifications.process_nm",
+      "value": 4,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/soc/qualcomm/2024/qualcomm-snapdragon-8-gen-3-sm8650-ac.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=24953"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-QUALCOMM-SNAPDRAGON-8-GEN-3-SM8650-AC-GPU-NAME",
+      "field_path": "specifications.gpu",
+      "value": "Qualcomm Adreno 750",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/soc/qualcomm/2024/qualcomm-snapdragon-8-gen-3-sm8650-ac.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=24953"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-QUALCOMM-SNAPDRAGON-8-GEN-3-SM8650-AC-RAW-CHIPSET",
+      "field_path": "specifications.raw_chipset",
+      "value": "Qualcomm Snapdragon 8 Gen 3 SM8650-AC (Lanai), 2024, 64 bit, octa-core, 12288 Kbyte L3, 4 nm, Qualcomm Adreno 750 GPU",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/soc/qualcomm/2024/qualcomm-snapdragon-8-gen-3-sm8650-ac.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=24953"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-QUALCOMM-SNAPDRAGON-8-GEN-3-SM8650-AC-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "soc/qualcomm/2024/qualcomm-snapdragon-8-gen-3-sm8650-ac.json",
+        "slug": "qualcomm-snapdragon-8-gen-3-sm8650-ac"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/soc/qualcomm/2024/qualcomm-snapdragon-8-gen-3-sm8650-ac.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=24953"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "soc/qualcomm/2024/qualcomm-snapdragon-8-gen-3-sm8650-ac.json",
+    "upstream_source_urls": [
+      "https://phonedb.net/index.php?m=device&id=24953"
+    ],
+    "upstream_verified": false,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23"
+  },
+  "component_type": "soc"
+}

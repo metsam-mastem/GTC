@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-3210",
+  "entity_type": "device_model",
+  "canonical_name": "3210",
+  "manufacturer": {
+    "manufacturer_id": "MFR-NOKIA",
+    "name": "Nokia"
+  },
+  "taxonomy_ids": [
+    "mobile.smartphone"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": [],
+    "base_model_slug": "3210"
+  },
+  "lifecycle": {
+    "release_year": 1999,
+    "release_date": "1999-01-01",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {
+    "mass_g": 151
+  },
+  "hardware": {
+    "soc_slug": "nokia-mobile-platform-1999",
+    "memory": {
+      "ram_gb": 1
+    },
+    "battery": {
+      "capacity_mah": 1500
+    },
+    "display": {
+      "type": "Monochrome graphic"
+    }
+  },
+  "software": {
+    "operating_system": "Feature phone"
+  },
+  "specifications": {},
+  "pricing": {},
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-BASE-MODEL-SLUG",
+      "field_path": "identity.base_model_slug",
+      "value": "3210",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-SOC",
+      "field_path": "hardware.soc_slug",
+      "value": "nokia-mobile-platform-1999",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "1999-01-01",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-RAM-GB",
+      "field_path": "hardware.memory.ram_gb",
+      "value": 1,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-BATTERY-MAH",
+      "field_path": "hardware.battery.capacity_mah",
+      "value": 1500,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-WEIGHT-G",
+      "field_path": "physical.mass_g",
+      "value": 151,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-OS",
+      "field_path": "software.operating_system",
+      "value": "Feature phone",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-DISPLAY",
+      "field_path": "hardware.display",
+      "value": {
+        "type": "Monochrome graphic"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-RAW-GSMARENA",
+      "field_path": "extensions.techapi_fields.raw_gsmarena",
+      "value": {
+        "launch_status": "Discontinued",
+        "network_technology": "GSM",
+        "platform_chipset": null,
+        "platform_cpu": null,
+        "platform_gpu": null
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-3210-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "smartphone/nokia/1999/3210.json",
+        "slug": "3210"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/nokia/1999/3210.json",
+      "supporting_urls": [
+        "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "smartphone/nokia/1999/3210.json",
+    "upstream_source_urls": [
+      "https://www.kaggle.com/datasets/msainani/gsmarena-mobile-devices"
+    ],
+    "upstream_verified": false,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23",
+    "techapi_fields": {
+      "raw_gsmarena": {
+        "launch_status": "Discontinued",
+        "network_technology": "GSM",
+        "platform_chipset": null,
+        "platform_cpu": null,
+        "platform_gpu": null
+      }
+    }
+  }
+}

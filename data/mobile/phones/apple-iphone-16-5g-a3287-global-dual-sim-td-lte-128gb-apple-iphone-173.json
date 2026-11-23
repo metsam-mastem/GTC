@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173",
+  "entity_type": "device_model",
+  "canonical_name": "Apple iPhone 16 5G A3287 Global Dual SIM TD-LTE 128GB (Apple iPhone 17,3)",
+  "manufacturer": {
+    "manufacturer_id": "MFR-APPLE",
+    "name": "Apple"
+  },
+  "taxonomy_ids": [
+    "mobile.smartphone"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": [],
+    "base_model_slug": "apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173"
+  },
+  "lifecycle": {
+    "release_year": 2024,
+    "release_date": "2024-09-21",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {
+    "mass_g": 170
+  },
+  "hardware": {
+    "soc_slug": "apple-a18-apl1v08-t8142",
+    "memory": {
+      "ram_gb": 8
+    },
+    "battery": {
+      "capacity_mah": 3561
+    },
+    "storage": {
+      "options_gb": [
+        128
+      ]
+    },
+    "display": {
+      "size_inch": 6.12,
+      "resolution": "1179x2556",
+      "type": "AM-OLED display",
+      "ppi": 460
+    }
+  },
+  "software": {
+    "operating_system": "iOS"
+  },
+  "specifications": {},
+  "pricing": {},
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-BASE-MODEL-SLUG",
+      "field_path": "identity.base_model_slug",
+      "value": "apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-SOC",
+      "field_path": "hardware.soc_slug",
+      "value": "apple-a18-apl1v08-t8142",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "2024-09-21",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-RAM-GB",
+      "field_path": "hardware.memory.ram_gb",
+      "value": 8,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-BATTERY-MAH",
+      "field_path": "hardware.battery.capacity_mah",
+      "value": 3561,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-WEIGHT-G",
+      "field_path": "physical.mass_g",
+      "value": 170,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-OS",
+      "field_path": "software.operating_system",
+      "value": "iOS",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-STORAGE-OPTIONS-GB",
+      "field_path": "hardware.storage.options_gb",
+      "value": [
+        128
+      ],
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-DISPLAY",
+      "field_path": "hardware.display",
+      "value": {
+        "size_inch": 6.12,
+        "resolution": "1179x2556",
+        "type": "AM-OLED display",
+        "ppi": 460
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-MARKET-REGIONS",
+      "field_path": "extensions.techapi_fields.market_regions",
+      "value": "Africa , Asia , Australia , Central America , Eastern Europe , Europe , Middle East , North America , Oceania , South America , Southeast Asia , Western Europe , Worldwide",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-MARKET-COUNTRIES",
+      "field_path": "extensions.techapi_fields.market_countries",
+      "value": "Afghanistan , Algeria , Argentina , Armenia , Australia , Austria , Azerbaijan , Bangladesh , Belarus , Belgium , Bolivia , Brazil , Bulgaria , Cambodia , Chile , Colombia , Costa Rica , Cyprus , Croa",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+        "slug": "apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=23872"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+    "upstream_source_urls": [
+      "https://phonedb.net/index.php?m=device&id=23872"
+    ],
+    "upstream_verified": true,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23",
+    "techapi_fields": {
+      "market_regions": "Africa , Asia , Australia , Central America , Eastern Europe , Europe , Middle East , North America , Oceania , South America , Southeast Asia , Western Europe , Worldwide",
+      "market_countries": "Afghanistan , Algeria , Argentina , Armenia , Australia , Austria , Azerbaijan , Bangladesh , Belarus , Belgium , Bolivia , Brazil , Bulgaria , Cambodia , Chile , Colombia , Costa Rica , Cyprus , Croa"
+    }
+  }
+}

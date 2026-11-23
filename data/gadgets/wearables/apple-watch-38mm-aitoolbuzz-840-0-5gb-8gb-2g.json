@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G",
+  "entity_type": "device_model",
+  "canonical_name": "Apple Watch 38mm (1st gen)",
+  "manufacturer": {
+    "manufacturer_id": "MFR-APPLE",
+    "name": "Apple"
+  },
+  "taxonomy_ids": [
+    "gadgets.wearable"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": [],
+    "base_model_slug": "watch-38mm"
+  },
+  "lifecycle": {
+    "release_year": 2015,
+    "release_date": "2015-05-01",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {
+    "mass_g": 40
+  },
+  "hardware": {
+    "memory": {
+      "ram_gb": 0.5
+    },
+    "battery": {
+      "capacity_mah": 205
+    },
+    "soc_slug": "apple-s1",
+    "storage": {
+      "options_gb": [
+        8
+      ]
+    },
+    "display": {
+      "size_inch": 1.5,
+      "resolution": "340x272 pixels",
+      "type": "Retina OLED, 450 nits (peak)",
+      "ppi": 290
+    },
+    "cameras": [
+      {
+        "type": "main",
+        "raw": "NO"
+      }
+    ]
+  },
+  "software": {
+    "operating_system": "watchOS 1.0, up to watchOS 4.3.2",
+    "version_at_launch": "1.0"
+  },
+  "specifications": {},
+  "pricing": {},
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-BASE-MODEL-SLUG",
+      "field_path": "identity.base_model_slug",
+      "value": "watch-38mm",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "2015-05-01",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-RAM-GB",
+      "field_path": "hardware.memory.ram_gb",
+      "value": 0.5,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-BATTERY-MAH",
+      "field_path": "hardware.battery.capacity_mah",
+      "value": 205,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-WEIGHT-G",
+      "field_path": "physical.mass_g",
+      "value": 40,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-OS",
+      "field_path": "software.operating_system",
+      "value": "watchOS 1.0, up to watchOS 4.3.2",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-VARIANT",
+      "field_path": "extensions.techapi_fields.variant",
+      "value": {
+        "region": "global",
+        "source_dataset": "devadigax/awesome-mobiles-database-by-aitoolbuzz-com",
+        "source_key": "devadigax/awesome-mobiles-database-by-aitoolbuzz-com:840",
+        "memory": {
+          "ram_gb": 0.5,
+          "storage_gb": 8
+        },
+        "network": {
+          "cellular": "2G"
+        },
+        "model_numbers": [
+          "A1553"
+        ],
+        "sim": "No"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-SOC",
+      "field_path": "hardware.soc_slug",
+      "value": "apple-s1",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-STORAGE-OPTIONS-GB",
+      "field_path": "hardware.storage.options_gb",
+      "value": [
+        8
+      ],
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-DISPLAY",
+      "field_path": "hardware.display",
+      "value": {
+        "size_inch": 1.5,
+        "resolution": "340x272 pixels",
+        "type": "Retina OLED, 450 nits (peak)",
+        "ppi": 290
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-CAMERAS",
+      "field_path": "hardware.cameras",
+      "value": [
+        {
+          "type": "main",
+          "raw": "NO"
+        }
+      ],
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-OS-VERSION",
+      "field_path": "software.version_at_launch",
+      "value": "1.0",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+        "slug": "apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "supporting_urls": [
+        "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+    "upstream_source_urls": [
+      "https://aitoolbuzz.com/mobiles/apple-watch-38mm-1st-gen"
+    ],
+    "upstream_verified": false,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23",
+    "techapi_fields": {
+      "variant": {
+        "region": "global",
+        "source_dataset": "devadigax/awesome-mobiles-database-by-aitoolbuzz-com",
+        "source_key": "devadigax/awesome-mobiles-database-by-aitoolbuzz-com:840",
+        "memory": {
+          "ram_gb": 0.5,
+          "storage_gb": 8
+        },
+        "network": {
+          "cellular": "2G"
+        },
+        "model_numbers": [
+          "A1553"
+        ],
+        "sim": "No"
+      }
+    }
+  }
+}

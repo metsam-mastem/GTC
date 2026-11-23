@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE",
+  "entity_type": "device_model",
+  "canonical_name": "Google Ion A6161 (HTC Sapphire)",
+  "manufacturer": {
+    "manufacturer_id": "MFR-GOOGLE",
+    "name": "Google"
+  },
+  "taxonomy_ids": [
+    "mobile.smartphone"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": [],
+    "base_model_slug": "google-ion-a6161-htc-sapphire"
+  },
+  "lifecycle": {
+    "release_year": 2009,
+    "release_date": "2009-06-01",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {
+    "mass_g": 116
+  },
+  "hardware": {
+    "soc_slug": "qualcomm-msm7200a",
+    "memory": {
+      "ram_gb": 1
+    },
+    "battery": {
+      "capacity_mah": 1340
+    },
+    "display": {
+      "size_inch": 3.19,
+      "resolution": "320x480",
+      "type": "Color TN-TFT LCD display",
+      "ppi": 181
+    }
+  },
+  "software": {
+    "operating_system": "Android"
+  },
+  "specifications": {},
+  "pricing": {},
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE-BASE-MODEL-SLUG",
+      "field_path": "identity.base_model_slug",
+      "value": "google-ion-a6161-htc-sapphire",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=2147"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE-SOC",
+      "field_path": "hardware.soc_slug",
+      "value": "qualcomm-msm7200a",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=2147"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "2009-06-01",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=2147"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE-RAM-GB",
+      "field_path": "hardware.memory.ram_gb",
+      "value": 1,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=2147"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE-BATTERY-MAH",
+      "field_path": "hardware.battery.capacity_mah",
+      "value": 1340,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=2147"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE-WEIGHT-G",
+      "field_path": "physical.mass_g",
+      "value": 116,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=2147"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE-OS",
+      "field_path": "software.operating_system",
+      "value": "Android",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=2147"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE-DISPLAY",
+      "field_path": "hardware.display",
+      "value": {
+        "size_inch": 3.19,
+        "resolution": "320x480",
+        "type": "Color TN-TFT LCD display",
+        "ppi": 181
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=2147"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+        "slug": "google-ion-a6161-htc-sapphire"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "supporting_urls": [
+        "https://phonedb.net/index.php?m=device&id=2147"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": false,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+    "upstream_source_urls": [
+      "https://phonedb.net/index.php?m=device&id=2147"
+    ],
+    "upstream_verified": false,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23"
+  }
+}

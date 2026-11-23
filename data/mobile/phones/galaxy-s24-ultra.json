@@ -1,0 +1,539 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-GALAXY-S24-ULTRA",
+  "entity_type": "device_model",
+  "canonical_name": "Galaxy S24 Ultra",
+  "manufacturer": {
+    "manufacturer_id": "MFR-SAMSUNG",
+    "name": "Samsung"
+  },
+  "taxonomy_ids": [
+    "mobile.smartphone"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": [],
+    "base_model_slug": "galaxy-s24-ultra"
+  },
+  "lifecycle": {
+    "release_year": 2024,
+    "release_date": "2024-01-31",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {
+    "mass_g": 232,
+    "dimensions": {
+      "height_mm": 162.3,
+      "width_mm": 79,
+      "depth_mm": 8.6
+    },
+    "ingress_protection_rating": "IP68"
+  },
+  "hardware": {
+    "soc_slug": "snapdragon-8-gen-3",
+    "memory": {
+      "ram_gb": 12
+    },
+    "storage": {
+      "options_gb": [
+        256,
+        512,
+        1024
+      ]
+    },
+    "display": {
+      "size_inch": 6.8,
+      "resolution": "3120x1440",
+      "refresh_hz": 120,
+      "type": "Dynamic AMOLED 2X",
+      "brightness_nits": 2600,
+      "ppi": 505
+    },
+    "cameras": [
+      {
+        "type": "main",
+        "mp": 200,
+        "aperture": 1.7,
+        "ois": true,
+        "sensor": "Samsung HP2"
+      },
+      {
+        "type": "ultrawide",
+        "mp": 12,
+        "aperture": 2.2,
+        "ois": false
+      },
+      {
+        "type": "telephoto",
+        "mp": 50,
+        "aperture": 3.4,
+        "ois": true,
+        "optical_zoom": 5
+      },
+      {
+        "type": "telephoto",
+        "mp": 10,
+        "aperture": 2.4,
+        "ois": true,
+        "optical_zoom": 3
+      },
+      {
+        "type": "selfie",
+        "mp": 12,
+        "aperture": 2.2
+      }
+    ],
+    "battery": {
+      "capacity_mah": 5000
+    },
+    "charging": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "5.3",
+      "nfc": true,
+      "usb": "USB-C 3.2"
+    }
+  },
+  "software": {
+    "operating_system": "Android",
+    "version_at_launch": "14"
+  },
+  "specifications": {},
+  "pricing": {
+    "msrp_usd": 1299
+  },
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-BASE-MODEL-SLUG",
+      "field_path": "identity.base_model_slug",
+      "value": "galaxy-s24-ultra",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-SOC",
+      "field_path": "hardware.soc_slug",
+      "value": "snapdragon-8-gen-3",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "2024-01-31",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-MSRP-USD",
+      "field_path": "pricing.msrp_usd",
+      "value": 1299,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-RAM-GB",
+      "field_path": "hardware.memory.ram_gb",
+      "value": 12,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-STORAGE-OPTIONS-GB",
+      "field_path": "hardware.storage.options_gb",
+      "value": [
+        256,
+        512,
+        1024
+      ],
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-DISPLAY",
+      "field_path": "hardware.display",
+      "value": {
+        "size_inch": 6.8,
+        "resolution": "3120x1440",
+        "refresh_hz": 120,
+        "type": "Dynamic AMOLED 2X",
+        "brightness_nits": 2600,
+        "ppi": 505
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-CAMERAS",
+      "field_path": "hardware.cameras",
+      "value": [
+        {
+          "type": "main",
+          "mp": 200,
+          "aperture": 1.7,
+          "ois": true,
+          "sensor": "Samsung HP2"
+        },
+        {
+          "type": "ultrawide",
+          "mp": 12,
+          "aperture": 2.2,
+          "ois": false
+        },
+        {
+          "type": "telephoto",
+          "mp": 50,
+          "aperture": 3.4,
+          "ois": true,
+          "optical_zoom": 5
+        },
+        {
+          "type": "telephoto",
+          "mp": 10,
+          "aperture": 2.4,
+          "ois": true,
+          "optical_zoom": 3
+        },
+        {
+          "type": "selfie",
+          "mp": 12,
+          "aperture": 2.2
+        }
+      ],
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-BATTERY-MAH",
+      "field_path": "hardware.battery.capacity_mah",
+      "value": 5000,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-CHARGING-WIRED-W",
+      "field_path": "hardware.charging.wired_max_w",
+      "value": 45,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-CHARGING-WIRELESS-W",
+      "field_path": "hardware.charging.wireless_max_w",
+      "value": 15,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-WEIGHT-G",
+      "field_path": "physical.mass_g",
+      "value": 232,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-DIMENSIONS",
+      "field_path": "physical.dimensions",
+      "value": {
+        "height_mm": 162.3,
+        "width_mm": 79,
+        "depth_mm": 8.6
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-IP-RATING",
+      "field_path": "physical.ingress_protection_rating",
+      "value": "IP68",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-OS",
+      "field_path": "software.operating_system",
+      "value": "Android",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-OS-VERSION",
+      "field_path": "software.version_at_launch",
+      "value": "14",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-CONNECTIVITY",
+      "field_path": "hardware.connectivity",
+      "value": {
+        "wifi": "Wi-Fi 7",
+        "bluetooth": "5.3",
+        "nfc": true,
+        "usb": "USB-C 3.2"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-IMAGE-URL",
+      "field_path": "extensions.techapi_fields.image_url",
+      "value": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Galaxy_S24_Ultra.jpg",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-IMAGE-LICENSE",
+      "field_path": "extensions.techapi_fields.image_license",
+      "value": "CC-BY-SA-4.0",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-IMAGE-ATTRIBUTION",
+      "field_path": "extensions.techapi_fields.image_attribution",
+      "value": "Vis M / Wikimedia Commons",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GALAXY-S24-ULTRA-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "smartphone/samsung/2024/galaxy-s24-ultra.json",
+        "slug": "galaxy-s24-ultra"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "supporting_urls": [
+        "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+        "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "smartphone/samsung/2024/galaxy-s24-ultra.json",
+    "upstream_source_urls": [
+      "https://www.samsung.com/global/galaxy/galaxy-s24-ultra/specs/",
+      "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24_Ultra"
+    ],
+    "upstream_verified": true,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23",
+    "techapi_fields": {
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Galaxy_S24_Ultra.jpg",
+      "image_license": "CC-BY-SA-4.0",
+      "image_attribution": "Vis M / Wikimedia Commons"
+    }
+  }
+}

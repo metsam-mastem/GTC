@@ -1,0 +1,100 @@
+{
+  "batch_id": "GTC-IMPORT-2026-11-23-SEED-01",
+  "created_at": "2026-11-23",
+  "upstream": "GetTechAPI/TechAPI",
+  "branch": "develop",
+  "data_license": "CC-BY-SA-4.0",
+  "attribution": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+  "import_policy": "All imported claims remain UNVERIFIED regardless of upstream verified flag. Each record keeps the upstream raw path and original source_urls.",
+  "count": 11,
+  "records": [
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-GALAXY-S24-ULTRA",
+      "canonical_name": "Galaxy S24 Ultra",
+      "manufacturer": "Samsung",
+      "raw_path": "data/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/smartphone/samsung/2024/galaxy-s24-ultra.json",
+      "gtc_path": "data/mobile/phones/galaxy-s24-ultra.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-3210",
+      "canonical_name": "3210",
+      "manufacturer": "Nokia",
+      "raw_path": "data/smartphone/nokia/1999/3210.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/smartphone/nokia/1999/3210.json",
+      "gtc_path": "data/mobile/phones/3210.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-GOOGLE-ION-A6161-HTC-SAPPHIRE",
+      "canonical_name": "Google Ion A6161 (HTC Sapphire)",
+      "manufacturer": "Google",
+      "raw_path": "data/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/smartphone/google/2009/google-ion-a6161-htc-sapphire.json",
+      "gtc_path": "data/mobile/phones/google-ion-a6161-htc-sapphire.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-REDMI-NOTE-14-PRO-5G",
+      "canonical_name": "Redmi Note 14 Pro+ 5G",
+      "manufacturer": "Xiaomi",
+      "raw_path": "data/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/smartphone/xiaomi/2024/redmi-note-14-pro-5g.json",
+      "gtc_path": "data/mobile/phones/redmi-note-14-pro-5g.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-APPLE-IPHONE-16-5G-A3287-GLOBAL-DUAL-SIM-TD-LTE-128GB-APPLE-IPHONE-173",
+      "canonical_name": "Apple iPhone 16 5G A3287 Global Dual SIM TD-LTE 128GB (Apple iPhone 17,3)",
+      "manufacturer": "Apple",
+      "raw_path": "data/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/smartphone/apple/2024/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json",
+      "gtc_path": "data/mobile/phones/apple-iphone-16-5g-a3287-global-dual-sim-td-lte-128gb-apple-iphone-173.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-QUALCOMM-SNAPDRAGON-8-GEN-3-SM8650-AC",
+      "canonical_name": "Qualcomm Snapdragon 8 Gen 3 SM8650-AC",
+      "manufacturer": "Qualcomm",
+      "raw_path": "data/soc/qualcomm/2024/qualcomm-snapdragon-8-gen-3-sm8650-ac.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/soc/qualcomm/2024/qualcomm-snapdragon-8-gen-3-sm8650-ac.json",
+      "gtc_path": "data/components/socs/qualcomm-snapdragon-8-gen-3-sm8650-ac.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-RYZEN-9-9950X",
+      "canonical_name": "AMD Ryzen 9 9950X",
+      "manufacturer": "AMD",
+      "raw_path": "data/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/cpu/amd/2024/consumer/ryzen-9-9950x.json",
+      "gtc_path": "data/components/cpus/ryzen-9-9950x.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-GEFORCE-RTX-4070-SUPER",
+      "canonical_name": "GeForce RTX 4070 Super",
+      "manufacturer": "NVIDIA",
+      "raw_path": "data/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "gtc_path": "data/components/gpus/geforce-rtx-4070-super.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-LENOVO-IDEAPAD-5I-ABHINAVFLAC-986",
+      "canonical_name": "Lenovo IdeaPad 5i 83DT004SIN",
+      "manufacturer": "Lenovo",
+      "raw_path": "data/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/laptop/lenovo/2024/lenovo-ideapad-5i/lenovo-ideapad-5i-abhinavflac-986.json",
+      "gtc_path": "data/computing/laptops/lenovo-ideapad-5i-abhinavflac-986.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-APPLE-IPAD-WI-FI-AITOOLBUZZ-787-0-25GB-16GB-2G",
+      "canonical_name": "Apple iPad Wi-Fi",
+      "manufacturer": "Apple",
+      "raw_path": "data/tablet/apple/2010/ipad-wi-fi/apple-ipad-wi-fi-aitoolbuzz-787-0-25gb-16gb-2g.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/tablet/apple/2010/ipad-wi-fi/apple-ipad-wi-fi-aitoolbuzz-787-0-25gb-16gb-2g.json",
+      "gtc_path": "data/mobile/tablets/apple-ipad-wi-fi-aitoolbuzz-787-0-25gb-16gb-2g.json"
+    },
+    {
+      "gtc_id": "GTC-IMP-TECHAPI-APPLE-WATCH-38MM-AITOOLBUZZ-840-0-5GB-8GB-2G",
+      "canonical_name": "Apple Watch 38mm (1st gen)",
+      "manufacturer": "Apple",
+      "raw_path": "data/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "raw_url": "https://raw.githubusercontent.com/GetTechAPI/TechAPI/develop/data/watch/apple/2015/watch-38mm/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json",
+      "gtc_path": "data/gadgets/wearables/apple-watch-38mm-aitoolbuzz-840-0-5gb-8gb-2g.json"
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-IMP-TECHAPI-GEFORCE-RTX-4070-SUPER",
+  "entity_type": "component",
+  "canonical_name": "GeForce RTX 4070 Super",
+  "manufacturer": {
+    "manufacturer_id": "MFR-NVIDIA",
+    "name": "NVIDIA"
+  },
+  "taxonomy_ids": [
+    "components",
+    "components.gpu"
+  ],
+  "identity": {
+    "model_codes": [],
+    "codenames": [],
+    "aliases": [],
+    "part_numbers": []
+  },
+  "lifecycle": {
+    "release_year": 2024,
+    "release_date": "2024-01-17",
+    "announcement_date": null,
+    "discontinued_date": null,
+    "status": "unknown",
+    "events": []
+  },
+  "physical": {},
+  "hardware": {},
+  "software": {},
+  "specifications": {
+    "architecture": "Ada Lovelace",
+    "cuda_cores": 7168,
+    "rt_cores": 56,
+    "tensor_cores": 224,
+    "memory_gb": 12,
+    "memory_type": "GDDR6X",
+    "memory_bus_bit": 192,
+    "memory_bandwidth_gbps": 504,
+    "base_clock_mhz": 1980,
+    "boost_clock_mhz": 2475,
+    "tdp_w": 220,
+    "pcie_version": "PCIe 4.0",
+    "benchmarks": {
+      "blender_score": 6232.93,
+      "timespy_score": 21035,
+      "passmark_g3d_mark": 29953
+    },
+    "timespy_extreme_score": 9967,
+    "speedway_score": 5241,
+    "octanebench_score": 707,
+    "fp32_tflops": 35.48
+  },
+  "pricing": {
+    "msrp_usd": 599
+  },
+  "relationships": [],
+  "claims": [
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-ARCHITECTURE",
+      "field_path": "specifications.architecture",
+      "value": "Ada Lovelace",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-RELEASE-DATE",
+      "field_path": "lifecycle.release_date",
+      "value": "2024-01-17",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-MSRP-USD",
+      "field_path": "pricing.msrp_usd",
+      "value": 599,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-CUDA-CORES",
+      "field_path": "specifications.cuda_cores",
+      "value": 7168,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-RT-CORES",
+      "field_path": "specifications.rt_cores",
+      "value": 56,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-TENSOR-CORES",
+      "field_path": "specifications.tensor_cores",
+      "value": 224,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-MEMORY-GB",
+      "field_path": "specifications.memory_gb",
+      "value": 12,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-MEMORY-TYPE",
+      "field_path": "specifications.memory_type",
+      "value": "GDDR6X",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-MEMORY-BUS-BIT",
+      "field_path": "specifications.memory_bus_bit",
+      "value": 192,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-MEMORY-BANDWIDTH-GBPS",
+      "field_path": "specifications.memory_bandwidth_gbps",
+      "value": 504,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-BASE-CLOCK-MHZ",
+      "field_path": "specifications.base_clock_mhz",
+      "value": 1980,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-BOOST-CLOCK-MHZ",
+      "field_path": "specifications.boost_clock_mhz",
+      "value": 2475,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-TDP-W",
+      "field_path": "specifications.tdp_w",
+      "value": 220,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-PCIE-VERSION",
+      "field_path": "specifications.pcie_version",
+      "value": "PCIe 4.0",
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-BLENDER-SCORE",
+      "field_path": "specifications.benchmarks.blender_score",
+      "value": 6232.93,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-TIMESPY-SCORE",
+      "field_path": "specifications.benchmarks.timespy_score",
+      "value": 21035,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-PASSMARK-G3D-MARK",
+      "field_path": "specifications.benchmarks.passmark_g3d_mark",
+      "value": 29953,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-TIMESPY-EXTREME-SCORE",
+      "field_path": "specifications.timespy_extreme_score",
+      "value": 9967,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-SPEEDWAY-SCORE",
+      "field_path": "specifications.speedway_score",
+      "value": 5241,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-OCTANEBENCH-SCORE",
+      "field_path": "specifications.octanebench_score",
+      "value": 707,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-FP32-TFLOPS",
+      "field_path": "specifications.fp32_tflops",
+      "value": 35.48,
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Imported from TechAPI. Upstream verification is contextual only; the GTC claim remains UNVERIFIED pending independent review."
+    },
+    {
+      "claim_id": "GTC-CLM-TECHAPI-GEFORCE-RTX-4070-SUPER-SOURCE-RECORD",
+      "field_path": "extensions.upstream_record",
+      "value": {
+        "dataset": "GetTechAPI/TechAPI",
+        "path": "gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+        "slug": "geforce-rtx-4070-super"
+      },
+      "source_id": "SRC-TECHAPI-DATA",
+      "source_url": "https://github.com/GetTechAPI/TechAPI/blob/develop/gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+      "supporting_urls": [
+        "https://en.wikipedia.org/wiki/GeForce_40_series",
+        "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+        "https://opendata.blender.org/snapshots/opendata-latest.zip",
+        "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+        "https://www.videocardbenchmark.net/gpu_list.php",
+        "https://www.topcpu.net/en/gpu-r/"
+      ],
+      "evidence_type": "curated_dataset",
+      "verification_status": "UNVERIFIED",
+      "retrieved_at": "2026-11-23",
+      "upstream_verification": true,
+      "note": "Upstream source record pointer; not an independent GTC verification."
+    }
+  ],
+  "source_ids": [
+    "SRC-TECHAPI-DATA"
+  ],
+  "completeness": {
+    "state": "BASIC_PROFILE",
+    "missing_sections": [
+      "independent GTC verification",
+      "regional and board variant resolution",
+      "hardware architecture and component inventory",
+      "software and firmware evidence",
+      "repair and engineering documentation"
+    ]
+  },
+  "extensions": {
+    "upstream": "GetTechAPI/TechAPI",
+    "upstream_record_path": "gpu/nvidia/2024/consumer/geforce-rtx-4070-super.json",
+    "upstream_source_urls": [
+      "https://en.wikipedia.org/wiki/GeForce_40_series",
+      "https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4029",
+      "https://opendata.blender.org/snapshots/opendata-latest.zip",
+      "https://www.topcpu.net/en/gpu-r/3dmark-time-spy",
+      "https://www.videocardbenchmark.net/gpu_list.php",
+      "https://www.topcpu.net/en/gpu-r/"
+    ],
+    "upstream_verified": true,
+    "upstream_license": "CC-BY-SA-4.0",
+    "attribution_required": "Data from TechAPI — https://github.com/GetTechAPI/TechAPI",
+    "imported_at": "2026-11-23"
+  },
+  "component_type": "gpu"
+}

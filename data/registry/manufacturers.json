@@ -82,6 +82,66 @@
         "SRC-QUALCOMM-8-ELITE-PRESS",
         "SRC-QUALCOMM-8-ELITE-BRIEF"
       ]
+    },
+    {
+      "manufacturer_id": "MFR-SAMSUNG",
+      "name": "Samsung",
+      "kind": "brand_or_vendor",
+      "country_or_origin": null,
+      "aliases": [],
+      "source_ids": [
+        "SRC-TECHAPI-DATA"
+      ]
+    },
+    {
+      "manufacturer_id": "MFR-GOOGLE",
+      "name": "Google",
+      "kind": "brand_or_vendor",
+      "country_or_origin": null,
+      "aliases": [],
+      "source_ids": [
+        "SRC-TECHAPI-DATA"
+      ]
+    },
+    {
+      "manufacturer_id": "MFR-XIAOMI",
+      "name": "Xiaomi",
+      "kind": "brand_or_vendor",
+      "country_or_origin": null,
+      "aliases": [],
+      "source_ids": [
+        "SRC-TECHAPI-DATA"
+      ]
+    },
+    {
+      "manufacturer_id": "MFR-AMD",
+      "name": "AMD",
+      "kind": "brand_or_vendor",
+      "country_or_origin": null,
+      "aliases": [],
+      "source_ids": [
+        "SRC-TECHAPI-DATA"
+      ]
+    },
+    {
+      "manufacturer_id": "MFR-NVIDIA",
+      "name": "NVIDIA",
+      "kind": "brand_or_vendor",
+      "country_or_origin": null,
+      "aliases": [],
+      "source_ids": [
+        "SRC-TECHAPI-DATA"
+      ]
+    },
+    {
+      "manufacturer_id": "MFR-LENOVO",
+      "name": "Lenovo",
+      "kind": "brand_or_vendor",
+      "country_or_origin": null,
+      "aliases": [],
+      "source_ids": [
+        "SRC-TECHAPI-DATA"
+      ]
     }
   ]
 }
