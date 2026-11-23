@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-COM-SBC-RASPBERRY-PI-MODEL-B-2012",
+  "entity_type": "device_model",
+  "canonical_name": "Raspberry Pi Model B (first generation, 2012)",
+  "manufacturer": {"manufacturer_id": "MFR-RASPBERRY-PI", "name": "Raspberry Pi Foundation"},
+  "product_family": {"name": "Raspberry Pi Model B"},
+  "taxonomy_ids": ["computing", "computing.sbc"],
+  "identity": {"model_codes": ["Raspberry Pi Model B"], "codenames": [], "aliases": ["Raspberry Pi 1 Model B", "Pi Model B (2012)"], "regulatory_ids": [], "regional_skus": []},
+  "lifecycle": {
+    "release_year": 2012, "release_date": "2012-03-01", "announcement_date": null, "discontinued_date": null, "status": "legacy",
+    "events": [{"event_type": "commercial_launch", "date": "2012-03-01", "description": "Raspberry Pi Foundation launch announcement; first production units were Model B.", "source_claim_ids": ["GTC-CLM-RPI-B-LAUNCH"]}]
+  },
+  "markets": ["Global"],
+  "physical": {"form_factor": "single-board computer", "dimensions_mm": {"length": 85, "width": 56}, "mass_g": null},
+  "hardware": {
+    "soc_id": "GTC-CMP-SOC-BROADCOM-BCM2835",
+    "processor": {"name": "ARM1176JZF-S", "architecture": "ARM11 / ARMv6", "cores": 1, "clock_mhz": 700},
+    "gpu": {"name": "Broadcom VideoCore IV"},
+    "memory": {"revision_configurations_mb": [256, 512]},
+    "gpio": {"pin_count": 26},
+    "connectivity": ["10/100 Ethernet", "USB 2.0"],
+    "storage": ["SD card slot"]
+  },
+  "software": {"operating_system": ["Raspberry Pi OS (historically Raspbian)", "other Linux distributions", "RISC OS"], "firmware": null},
+  "relationships": [{"relation_type": "uses_component", "target_gtc_id": "GTC-CMP-SOC-BROADCOM-BCM2835"}],
+  "claims": [
+    {"claim_id": "GTC-CLM-RPI-B-LAUNCH", "field_path": "lifecycle.release_date", "value": "2012-03-01", "source_id": "SRC-RASPBERRYPI-LAUNCH", "source_url": "https://www.raspberrypi.com/news/the-raspberry-pi-launch/", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "Official launch post dated 1 March 2012; states first units produced were Model B."},
+    {"claim_id": "GTC-CLM-RPI-B-SOC", "field_path": "hardware.soc_id", "value": "Broadcom BCM2835", "source_id": "SRC-RASPBERRYPI-DOCS", "source_url": "https://www.raspberrypi.com/documentation/computers/sbcs.html", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "Official classic SBC documentation identifies the BCM2835 SoC."},
+    {"claim_id": "GTC-CLM-RPI-B-CPU", "field_path": "hardware.processor", "value": {"name": "ARM1176JZF-S", "architecture": "ARM11 / ARMv6", "cores": 1, "clock_mhz": 700}, "source_id": "SRC-RASPBERRYPI-DOCS", "source_url": "https://www.raspberrypi.com/documentation/computers/sbcs.html", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "Official specification for original Model A/B platform."},
+    {"claim_id": "GTC-CLM-RPI-B-RAM", "field_path": "hardware.memory.revision_configurations_mb", "value": [256, 512], "unit": "MB", "source_id": "SRC-RASPBERRYPI-DOCS", "source_url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "Official revision-code table distinguishes early 256 MB and later 512 MB board revisions."},
+    {"claim_id": "GTC-CLM-RPI-B-IO", "field_path": "hardware.gpio_and_connectivity", "value": {"gpio_pin_count": 26, "ethernet": "10/100", "usb_ports": 2, "storage": "SD"}, "source_id": "SRC-RASPBERRYPI-DOCS", "source_url": "https://www.raspberrypi.com/documentation/computers/sbcs.html", "evidence_type": "manufacturer", "verification_status": "CORROBORATED", "retrieved_at": "2026-11-23", "note": "Model B differs from Model A in Ethernet and USB configuration."}
+  ],
+  "source_ids": ["SRC-RASPBERRYPI-DOCS", "SRC-RASPBERRYPI-LAUNCH"],
+  "completeness": {"state": "SPECIFICATIONS_SOURCED", "missing_sections": ["revision-specific board photos and PCB layout", "component inventory and BOM", "power and clock measurements", "schematic and design-file audit", "repair evidence"]},
+  "extensions": {"revision_policy": "RAM and manufacturer differ by board revision; create child device_variant records when documenting a specific revision code."}
+}

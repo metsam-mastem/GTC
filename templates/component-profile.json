@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-CMP-PROVISIONAL-REPLACE",
+  "entity_type": "component",
+  "canonical_name": "REPLACE WITH COMPONENT NAME",
+  "component_type": "REPLACE",
+  "manufacturer": {"manufacturer_id": "MFR-REPLACE", "name": "REPLACE"},
+  "taxonomy_ids": ["components"],
+  "identity": {"part_numbers": [], "aliases": []},
+  "specifications": {},
+  "relationships": [],
+  "claims": [{"claim_id": "GTC-CLM-REPLACE", "field_path": "specifications.REPLACE", "value": null, "source_id": "SRC-REPLACE", "source_url": "https://example.org/replace-with-source", "evidence_type": "manufacturer", "verification_status": "UNVERIFIED", "retrieved_at": "YYYY-MM-DD", "note": "Replace with evidence."}],
+  "source_ids": ["SRC-REPLACE"],
+  "completeness": {"state": "IDENTIFIED", "missing_sections": ["datasheet", "package", "pinout", "electrical characteristics"]}
+}

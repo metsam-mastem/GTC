@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gtc.example/schemas/claim.schema.json",
+  "title": "GTC Evidence Claim",
+  "type": "object",
+  "required": ["claim_id", "field_path", "value", "source_id", "source_url", "evidence_type", "verification_status", "retrieved_at"],
+  "properties": {
+    "claim_id": {"type": "string", "pattern": "^GTC-CLM-[A-Z0-9-]+$"},
+    "field_path": {"type": "string", "minLength": 1},
+    "value": {},
+    "unit": {"type": ["string", "null"]},
+    "source_id": {"type": "string"},
+    "source_url": {"type": "string", "format": "uri"},
+    "supporting_urls": {"type": "array", "items": {"type": "string", "format": "uri"}},
+    "evidence_type": {"enum": ["manufacturer", "regulatory", "standards_body", "museum_catalog", "secondary_source", "curated_dataset", "community_documentation", "physical_observation", "software_extraction", "engineering_inference", "test_measurement"]},
+    "verification_status": {"enum": ["VERIFIED", "CORROBORATED", "UNVERIFIED", "CONFLICTED", "DEPRECATED"]},
+    "retrieved_at": {"type": "string", "format": "date"},
+    "note": {"type": "string"},
+    "reviewer": {"type": ["string", "null"]},
+    "upstream_verification": {"type": ["boolean", "null"]}
+  },
+  "additionalProperties": true
+}

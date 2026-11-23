@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-CMP-SOC-BROADCOM-BCM2835",
+  "entity_type": "component",
+  "canonical_name": "Broadcom BCM2835",
+  "component_type": "system_on_chip",
+  "manufacturer": {"manufacturer_id": "MFR-BROADCOM", "name": "Broadcom"},
+  "taxonomy_ids": ["components", "components.soc"],
+  "identity": {"part_numbers": ["BCM2835"], "aliases": ["Raspberry Pi BCM2835"]},
+  "specifications": {
+    "cpu": {"architecture": "ARM11", "core": "ARM1176JZF-S", "cores": 1, "clock_mhz": 700},
+    "gpu": {"name": "VideoCore IV", "clock_mhz": 250},
+    "integration": ["CPU", "GPU", "DSP", "memory controller and peripheral interfaces"],
+    "process_nm": null,
+    "package": null
+  },
+  "relationships": [{"relation_type": "used_by", "target_gtc_id": "GTC-COM-SBC-RASPBERRY-PI-MODEL-B-2012"}],
+  "claims": [
+    {"claim_id": "GTC-CLM-BCM2835-SOC", "field_path": "specifications.integration", "value": "Broadcom BCM2835 SoC used by first-generation Raspberry Pi A/B boards", "source_id": "SRC-RASPBERRYPI-DOCS", "source_url": "https://www.raspberrypi.com/documentation/computers/sbcs.html", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "Official documentation identifies BCM2835 as the SoC in original A/B systems."},
+    {"claim_id": "GTC-CLM-BCM2835-CPU", "field_path": "specifications.cpu", "value": {"architecture": "ARM11", "core": "ARM1176JZF-S", "cores": 1, "clock_mhz": 700}, "source_id": "SRC-RASPBERRYPI-DOCS", "source_url": "https://www.raspberrypi.com/documentation/computers/sbcs.html", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "CPU architecture and nominal frequency for first-generation Model A/B."},
+    {"claim_id": "GTC-CLM-BCM2835-GPU", "field_path": "specifications.gpu", "value": {"name": "VideoCore IV", "clock_mhz": 250}, "source_id": "SRC-RASPBERRYPI-DOCS", "source_url": "https://www.raspberrypi.com/documentation/computers/sbcs.html", "evidence_type": "manufacturer", "verification_status": "CORROBORATED", "retrieved_at": "2026-11-23", "note": "Verify GPU clock against board revision and official technical references before treating it as universal."}
+  ],
+  "source_ids": ["SRC-RASPBERRYPI-DOCS"],
+  "completeness": {"state": "BASIC_PROFILE", "missing_sections": ["silicon die markings and package data", "datasheet or reference manual", "clock and power domains", "memory interface details", "hardware errata and revision map"]}
+}

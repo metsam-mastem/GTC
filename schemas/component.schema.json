@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gtc.example/schemas/component.schema.json",
+  "title": "GTC Component Record",
+  "type": "object",
+  "required": ["schema_version", "gtc_id", "entity_type", "canonical_name", "component_type", "manufacturer", "taxonomy_ids", "identity", "specifications", "claims", "source_ids", "completeness"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "gtc_id": {"type": "string", "pattern": "^GTC-[A-Z0-9-]+$"},
+    "entity_type": {"const": "component"},
+    "canonical_name": {"type": "string"},
+    "component_type": {"type": "string"},
+    "manufacturer": {"type": "object", "required": ["manufacturer_id", "name"], "properties": {"manufacturer_id": {"type": "string"}, "name": {"type": "string"}}, "additionalProperties": true},
+    "taxonomy_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "identity": {"type": "object"},
+    "specifications": {"type": "object"},
+    "relationships": {"type": "array", "items": {"type": "object"}},
+    "claims": {"type": "array", "items": {"$ref": "claim.schema.json"}, "minItems": 1},
+    "source_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "completeness": {"type": "object"},
+    "extensions": {"type": "object"}
+  },
+  "additionalProperties": true
+}

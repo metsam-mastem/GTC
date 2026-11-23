@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "manufacturers": [
+    {"manufacturer_id": "MFR-MOTOROLA", "name": "Motorola", "kind": "brand", "country_or_origin": "United States", "aliases": ["Motorola Mobility"], "source_ids": ["SRC-MOTOROLA-HISTORY"]},
+    {"manufacturer_id": "MFR-NOKIA", "name": "Nokia", "kind": "brand", "country_or_origin": "Finland", "aliases": ["Mobira"], "source_ids": ["SRC-TCD-TREASURES"]},
+    {"manufacturer_id": "MFR-APPLE", "name": "Apple", "kind": "brand", "country_or_origin": "United States", "aliases": [], "source_ids": ["SRC-APPLE-SUPPORT"]},
+    {"manufacturer_id": "MFR-IBM", "name": "IBM", "kind": "brand", "country_or_origin": "United States", "aliases": ["International Business Machines"], "source_ids": ["SRC-OLDTHINKPAD"]},
+    {"manufacturer_id": "MFR-RASPBERRY-PI", "name": "Raspberry Pi Foundation", "kind": "foundation_and_brand", "country_or_origin": "United Kingdom", "aliases": ["Raspberry Pi"], "source_ids": ["SRC-RASPBERRYPI-DOCS", "SRC-RASPBERRYPI-LAUNCH"]},
+    {"manufacturer_id": "MFR-BROADCOM", "name": "Broadcom", "kind": "semiconductor_vendor", "country_or_origin": "United States", "aliases": [], "source_ids": ["SRC-RASPBERRYPI-DOCS"]}
+  ]
+}

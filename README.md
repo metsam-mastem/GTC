@@ -1,44 +1,52 @@
 # Gadget Time Capsule (GTC)
 
-**Universal Historical & Engineering Atlas of Digital Devices**
+**Universal Historical, Device Knowledge and Engineering Atlas**
 
-GTC is a source-traceable, extensible knowledge base for the history, identity, architecture, components, software, repair, and reverse engineering of digital devices.
+GTC is a modular, source-traceable atlas for the history, identity, hardware, software, repair and lawful engineering analysis of digital devices.
 
-## Mission
-- Preserve the history of mobile phones and the wider universe of computing and electronic devices.
-- Give every product model and hardware variant a stable identity record.
-- Connect devices to manufacturers, components, chipsets, standards, firmware, documents, images, and engineering evidence.
-- Make uncertainty, provenance, licensing, and verification status explicit.
-- Support research, repair, education, interoperability, and lawful hardware analysis.
-
-## Scope
-1. Mobile phones, feature phones, smartphones, satellite phones, PDAs.
-2. Tablets, e-readers, wearables, cameras, audio and gaming devices.
-3. Laptops, desktops, workstations, servers, thin clients, legacy computers.
-4. Motherboards, PCBs, CPUs, GPUs, SoCs, MCUs, memory, storage, power and connectivity modules.
-5. Networking, embedded, IoT, robotics, automotive, industrial, scientific and energy devices.
-
-## Core principles
-- A product family, marketed model, regional SKU, carrier variant, board revision, and component are distinct entities.
-- Never merge variants merely because their marketing names look similar.
-- Every important factual claim should carry a source, retrieval date, and verification status.
-- Separate manufacturer-published facts, third-party specifications, physical observations, software extraction, and engineering inference.
-- Respect source licenses, copyright, access controls, privacy, and applicable law.
-- Do not claim complete global coverage without measurable evidence.
+## Current foundation
+- Stable device and component identity model.
+- Claim-level provenance and evidence statuses.
+- Universal hardware taxonomy and source registry.
+- Cited starter dossiers for mobile phones, laptops and single-board computers.
+- Standard-library Python runtime for validation, catalogue indexing and source-health checks.
+- Controlled TechAPI importer with provenance and license handling.
+- GitHub Actions validation and scheduled source-health monitoring.
 
 ## Repository map
-- `docs/ARCHITECTURE.md` — system architecture and design decisions.
-- `docs/TAXONOMY.md` — universal device taxonomy.
-- `docs/DEVICE_IDENTITY_SCHEMA.md` — canonical device identity and dossier schema.
-- `docs/SOURCES_AND_INGESTION.md` — source registry, ingestion, provenance and validation.
-- `data/` — structured device records, organized by entity type.
-- `schemas/` — machine-readable JSON Schemas.
-- `templates/` — dossier templates.
-- `media/` — lightweight original assets and metadata; large binaries should use an appropriate external/LFS store.
-- `research/` — historical and engineering research notes.
+- docs/ — architecture, taxonomy, data model, source and license policy.
+- schemas/ — machine-readable JSON contracts.
+- data/registry/ — taxonomy, manufacturers and source registry.
+- data/mobile/, data/computing/, data/components/ — canonical records.
+- tools/ — local runtime and controlled import adapters.
+- templates/ — reusable dossier templates.
+- tests/ — runtime tests.
+- .github/workflows/ — automated validation and source monitoring.
+- generated/ — derived local/CI outputs, not canonical source data.
 
-## Status
-Foundation initialized. Device coverage has not yet been populated or audited. This repository must not be described as a complete device catalogue.
+## Run locally
+Requires Python 3.10+ and no third-party packages.
 
-## First milestone
-Build and validate the canonical data model, then seed a historically representative mobile-phone dataset with cited evidence before expanding to laptops and other hardware families.
+    python tools/gtc_runtime.py validate --strict
+    python tools/gtc_runtime.py build-index
+    python -m unittest discover -s tests -v
+
+Import selected local TechAPI JSON records after reviewing its CC BY-SA 4.0 data terms:
+
+    python tools/importers/import_techapi.py path/to/record.json --source-root path/to/TechAPI/data --confirm-license --dry-run
+
+Imported claims remain UNVERIFIED in GTC until independently reviewed.
+
+## Evidence discipline
+A model name is not a unique product identity. Regional SKUs, operator versions, hardware revisions and board variants must remain distinguishable. Factual claims carry their own source, locator, retrieval date, evidence type and verification status. An upstream verified flag is never automatically promoted to GTC verification.
+
+## Coverage statement
+This is an extensible foundation and a small, cited starter catalogue, not a complete global inventory. Coverage must be measured by family, manufacturer, era, market, variants and evidence depth.
+
+## Licensing
+- Repository code: MIT; see LICENSE.
+- Original curated GTC database contributions: CC BY-SA 4.0; see DATA_LICENSE.md.
+- Third-party datasets and media retain their own source licenses and conditions. See docs/LICENSE_POLICY.md.
+
+## Principles
+Source first. No fabricated specifications. No hidden merges. No copied restricted media. No personal-device identifiers. No unsupported completeness claims.

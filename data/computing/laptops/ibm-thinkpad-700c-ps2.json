@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-COM-LAPTOP-IBM-THINKPAD-700C-PS2",
+  "entity_type": "device_model",
+  "canonical_name": "IBM ThinkPad 700C PS/2",
+  "manufacturer": {"manufacturer_id": "MFR-IBM", "name": "IBM"},
+  "product_family": {"name": "ThinkPad 700 series"},
+  "taxonomy_ids": ["computing", "computing.laptop"],
+  "identity": {"model_codes": ["Machine Type 9552; ThinkPad 700C PS/2"], "codenames": [], "aliases": ["ThinkPad 700C"], "regulatory_ids": [], "regional_skus": []},
+  "lifecycle": {
+    "release_year": 1993, "release_date": "1993-05-01", "announcement_date": null, "discontinued_date": null, "status": "legacy",
+    "events": [{"event_type": "commercial_release_period", "date": "1993-05", "description": "OldThinkPad transcription of IBM product records lists May 1993 for the 700C PS/2 variant.", "source_claim_ids": ["GTC-CLM-TP700C-DATE"]}]
+  },
+  "markets": ["International; regional keyboard variants existed"],
+  "physical": {"form_factor": "clamshell notebook", "dimensions_mm": null, "mass_g": null, "materials": null},
+  "hardware": {
+    "processor": {"name": "IBM 486SLC2", "clock_mhz": 50, "package": "soldered QFP"},
+    "chipset": "IBM", "system_bus": "Micro Channel",
+    "memory": {"standard_mb": 4, "maximum_mb": 16},
+    "storage": {"type": "2.5-inch ESDI", "options_mb": [120, 160]},
+    "display": {"size_in": 10.4, "type": "active matrix", "resolution": "640x480"},
+    "graphics": {"controller": "Western Digital WD90C26", "video_memory_kb": 512},
+    "expansion": ["2 x PCMCIA"], "input": ["TrackPoint II", "keyboard"]
+  },
+  "software": {"operating_system": null, "firmware": "IBM BIOS"},
+  "relationships": [],
+  "claims": [
+    {"claim_id": "GTC-CLM-TP700C-DATE", "field_path": "lifecycle.release_date", "value": "1993-05", "source_id": "SRC-OLDTHINKPAD", "source_url": "https://oldthinkpad.com/parts/9552", "evidence_type": "community_documentation", "verification_status": "CORROBORATED", "retrieved_at": "2026-11-23", "note": "Historical service reference transcribes IBM product records; source gives month precision only."},
+    {"claim_id": "GTC-CLM-TP700C-CPU", "field_path": "hardware.processor", "value": {"name": "IBM 486SLC2", "clock_mhz": 50, "package": "soldered QFP"}, "source_id": "SRC-OLDTHINKPAD", "source_url": "https://oldthinkpad.com/parts/9552", "evidence_type": "community_documentation", "verification_status": "UNVERIFIED", "retrieved_at": "2026-11-23", "note": "Transcribed service reference; inspect original IBM maintenance manuals before repair."},
+    {"claim_id": "GTC-CLM-TP700C-DISPLAY", "field_path": "hardware.display", "value": {"size_in": 10.4, "type": "active matrix", "resolution": "640x480"}, "source_id": "SRC-OLDTHINKPAD", "source_url": "https://oldthinkpad.com/parts/9552", "evidence_type": "community_documentation", "verification_status": "UNVERIFIED", "retrieved_at": "2026-11-23", "note": "Variant-specific table lists 700C PS/2 with a 10.4-inch active-matrix display."},
+    {"claim_id": "GTC-CLM-TP700C-MEMORY", "field_path": "hardware.memory", "value": {"standard_mb": 4, "maximum_mb": 16}, "unit": "MB", "source_id": "SRC-OLDTHINKPAD", "source_url": "https://oldthinkpad.com/parts/9552", "evidence_type": "community_documentation", "verification_status": "UNVERIFIED", "retrieved_at": "2026-11-23", "note": "Confirm exact option configuration and memory-card compatibility against original manual."}
+  ],
+  "source_ids": ["SRC-OLDTHINKPAD"],
+  "completeness": {"state": "SPECIFICATIONS_SOURCED", "missing_sections": ["original IBM brochure/manual verification", "FRU and part inventory", "board revision and PCB photos", "BIOS version map", "service and repair test evidence"]},
+  "extensions": {"source_warning": "OldThinkPad describes this as a transcription that may contain incomplete captures and directs readers to original IBM manuals as authoritative service references."}
+}

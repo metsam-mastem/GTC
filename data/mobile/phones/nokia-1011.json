@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-MOB-NOKIA-1011",
+  "entity_type": "device_model",
+  "canonical_name": "Nokia 1011",
+  "manufacturer": {"manufacturer_id": "MFR-NOKIA", "name": "Nokia"},
+  "product_family": {"name": "Nokia early GSM handsets"},
+  "taxonomy_ids": ["mobile", "mobile.cellular", "mobile.cellular.2g"],
+  "identity": {"model_codes": ["NHE-2XN", "NHE-2X5"], "codenames": [], "aliases": ["Mobira Cityman 2000"], "regulatory_ids": [], "regional_skus": []},
+  "lifecycle": {
+    "release_year": 1992, "release_date": "1992-11-10", "announcement_date": null, "discontinued_date": null, "status": "discontinued",
+    "events": [
+      {"event_type": "commercial_availability", "date": "1992-11-10", "description": "Date associated with model naming and launch in the Trinity College Dublin historical catalogue.", "source_claim_ids": ["GTC-CLM-NOKIA1011-DATE"]}
+    ]
+  },
+  "markets": ["GSM 900 markets; country-specific release detail not yet resolved"],
+  "physical": {"form_factor": "brick with external antenna", "dimensions_mm": {"length": 195, "width": 60, "depth": 45}, "mass_g": 495, "materials": null},
+  "hardware": {"network_generation": "2G", "network_standard": "GSM 900", "soc_id": null, "cpu": null, "memory": {"phonebook_entries": 99}, "display": {"type": "monochrome LCD", "lines": 2, "characters_per_line": 8}, "battery": {"chemistry": "Ni-Cd", "voltage_v": 7.2, "capacity_mah": 900}, "connectivity": ["GSM 900", "SMS receive"]},
+  "software": {"operating_system": "embedded", "launch_software": null, "firmware": null},
+  "relationships": [],
+  "claims": [
+    {"claim_id": "GTC-CLM-NOKIA1011-DATE", "field_path": "lifecycle.release_date", "value": "1992-11-10", "source_id": "SRC-TCD-TREASURES", "source_url": "https://treasures.scss.tcd.ie/literature/TCD-SCSS-V.20250620.001/TCD-SCSS-V.20250620.001.pdf", "evidence_type": "museum_catalog", "verification_status": "CORROBORATED", "retrieved_at": "2026-11-23", "note": "TCD collection catalogue associates 10 November 1992 with launch and model naming; corroborate with contemporary Nokia/press records."},
+    {"claim_id": "GTC-CLM-NOKIA1011-MODEL", "field_path": "identity.model_codes", "value": ["NHE-2XN", "NHE-2X5"], "source_id": "SRC-TCD-TREASURES", "source_url": "https://treasures.scss.tcd.ie/literature/TCD-SCSS-V.20250620.001/TCD-SCSS-V.20250620.001.pdf", "evidence_type": "museum_catalog", "verification_status": "UNVERIFIED", "retrieved_at": "2026-11-23", "note": "Catalogue repeats a secondary reference for model identifiers; check against original label and manual."},
+    {"claim_id": "GTC-CLM-NOKIA1011-GSM", "field_path": "hardware.network_standard", "value": "GSM 900", "source_id": "SRC-TCD-TREASURES", "source_url": "https://treasures.scss.tcd.ie/literature/TCD-SCSS-V.20250620.001/TCD-SCSS-V.20250620.001.pdf", "evidence_type": "museum_catalog", "verification_status": "CORROBORATED", "retrieved_at": "2026-11-23", "note": "The collection entry describes this as a single-band 2G GSM 900 device."},
+    {"claim_id": "GTC-CLM-NOKIA1011-SPECS", "field_path": "physical_and_hardware.specifications", "value": {"dimensions_mm": [195, 60, 45], "mass_g": 495, "phonebook_entries": 99, "battery": "Ni-Cd 7.2 V 900 mAh", "display": "2-line, 8-character monochrome LCD"}, "source_id": "SRC-TCD-TREASURES", "source_url": "https://treasures.scss.tcd.ie/literature/TCD-SCSS-V.20250620.001/TCD-SCSS-V.20250620.001.pdf", "evidence_type": "secondary_source", "verification_status": "UNVERIFIED", "retrieved_at": "2026-11-23", "note": "TCD page explicitly says detailed specifications are quoted from Wikipedia. Treat as leads until checked against original manual or contemporary technical material."}
+  ],
+  "source_ids": ["SRC-TCD-TREASURES"],
+  "completeness": {"state": "SPECIFICATIONS_SOURCED", "missing_sections": ["manufacturer-primary specifications", "board and chip identification", "service manual verification", "firmware evidence", "repair documentation", "independent spec corroboration"]},
+  "extensions": {"historical_caution": "TCD notes Nokia 1011 was not the world's first GSM mobile phone; it is described as the first mass-produced GSM phone. Avoid the broader 'first GSM phone' label."}
+}

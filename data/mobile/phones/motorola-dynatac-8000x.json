@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-MOB-MOTOROLA-DYNATAC-8000X",
+  "entity_type": "device_model",
+  "canonical_name": "Motorola DynaTAC 8000X",
+  "manufacturer": {"manufacturer_id": "MFR-MOTOROLA", "name": "Motorola"},
+  "product_family": {"name": "DynaTAC"},
+  "taxonomy_ids": ["mobile", "mobile.cellular", "mobile.cellular.1g"],
+  "identity": {"model_codes": ["DynaTAC 8000X"], "codenames": ["DynaTAC"], "aliases": ["Motorola DynaTAC 8000X portable cellular phone"], "regulatory_ids": [], "regional_skus": []},
+  "lifecycle": {
+    "release_year": 1983, "release_date": null, "announcement_date": null, "discontinued_date": null, "status": "discontinued",
+    "events": [
+      {"event_type": "working_prototype", "date": "1973-02", "description": "Motorola records that a working DynaTAC portable phone prototype had been produced by February 1973.", "source_claim_ids": ["GTC-CLM-DYNATAC-PROTOTYPE"]},
+      {"event_type": "public_demonstration", "date": "1973-04-03", "description": "Public demonstration of the working DynaTAC prototype and portable cellular system in New York City.", "source_claim_ids": ["GTC-CLM-DYNATAC-DEMO"]},
+      {"event_type": "regulatory_type_acceptance", "date": "1983-09-21", "description": "Motorola records FCC type acceptance of the DynaTAC 8000X as the first commercial portable cellular phone.", "source_claim_ids": ["GTC-CLM-DYNATAC-APPROVAL"]}
+    ]
+  },
+  "markets": ["United States", "International market rollout; specific country variants not yet catalogued"],
+  "physical": {"form_factor": "handheld cellular handset", "dimensions_mm": null, "mass_g": null, "materials": null},
+  "hardware": {"network_generation": "1G", "network_standard": null, "radio_system": "analogue cellular", "soc_id": null, "cpu": null, "memory": null, "display": null, "battery": null, "connectivity": ["cellular radio"]},
+  "software": {"operating_system": null, "launch_software": null, "firmware": null},
+  "relationships": [],
+  "claims": [
+    {"claim_id": "GTC-CLM-DYNATAC-PROTOTYPE", "field_path": "lifecycle.events[0].date", "value": "1973-02", "source_id": "SRC-MOTOROLA-HISTORY", "source_url": "https://www.motorolasolutions.com/en_us/about/history/explore-motorola-heritage/cell-phone-development.html", "evidence_type": "manufacturer", "verification_status": "CORROBORATED", "retrieved_at": "2026-11-23", "note": "Motorola states a working portable prototype existed by February 1973."},
+    {"claim_id": "GTC-CLM-DYNATAC-DEMO", "field_path": "lifecycle.events[1].date", "value": "1973-04-03", "source_id": "SRC-MOTOROLA-HISTORY", "source_url": "https://www.motorolasolutions.com/en_us/about/history/explore-motorola-heritage/cell-phone-development.html", "evidence_type": "manufacturer", "verification_status": "CORROBORATED", "retrieved_at": "2026-11-23", "note": "Public prototype demonstration; distinct from commercial launch."},
+    {"claim_id": "GTC-CLM-DYNATAC-APPROVAL", "field_path": "lifecycle.events[2].date", "value": "1983-09-21", "source_id": "SRC-MOTOROLA-HISTORY", "source_url": "https://www.motorolasolutions.com/en_us/about/history/explore-motorola-heritage/cell-phone-development.html", "evidence_type": "manufacturer", "verification_status": "CORROBORATED", "retrieved_at": "2026-11-23", "note": "Motorola identifies this as FCC type acceptance; do not relabel it as first retail-sale date."}
+  ],
+  "source_ids": ["SRC-MOTOROLA-HISTORY"],
+  "completeness": {"state": "BASIC_PROFILE", "missing_sections": ["exact technical specifications", "service documentation", "PCB and component inventory", "firmware and software architecture", "repair procedures", "regional variants"]},
+  "extensions": {"editorial_note": "The 1973 public demonstration, 1983 regulatory type acceptance and retail availability are separate historical events; no exact retail-sale date is asserted."}
+}

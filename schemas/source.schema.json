@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gtc.example/schemas/source.schema.json",
+  "title": "GTC Source Registry Entry",
+  "type": "object",
+  "required": ["source_id", "name", "source_type", "canonical_url", "license", "ingestion_policy", "coverage", "limitations", "checked_at"],
+  "properties": {
+    "source_id": {"type": "string", "pattern": "^SRC-[A-Z0-9-]+$"},
+    "name": {"type": "string"},
+    "source_type": {"type": "string"},
+    "canonical_url": {"type": "string", "format": "uri"},
+    "license": {"type": "object", "required": ["declared", "scope", "status"], "properties": {"declared": {"type": "string"}, "scope": {"type": "string"}, "status": {"type": "string"}, "terms_url": {"type": ["string", "null"]}, "conditions": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": true},
+    "ingestion_policy": {"enum": ["allow", "sharealike", "conditional", "facts_and_links_only", "lead_only", "blocked"]},
+    "coverage": {"type": "string"},
+    "limitations": {"type": "string"},
+    "checked_at": {"type": "string", "format": "date"},
+    "audit_enabled": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

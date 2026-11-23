@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-DEVICE-PROVISIONAL-REPLACE",
+  "entity_type": "device_model",
+  "canonical_name": "REPLACE WITH SOURCED MODEL NAME",
+  "manufacturer": {"manufacturer_id": "MFR-REPLACE", "name": "REPLACE"},
+  "product_family": null,
+  "taxonomy_ids": ["REPLACE_WITH_TAXONOMY_ID"],
+  "identity": {"model_codes": [], "codenames": [], "aliases": [], "regulatory_ids": [], "regional_skus": []},
+  "lifecycle": {"release_year": null, "release_date": null, "announcement_date": null, "discontinued_date": null, "status": "unknown", "events": []},
+  "markets": [],
+  "physical": {},
+  "hardware": {},
+  "software": {},
+  "relationships": [],
+  "claims": [{"claim_id": "GTC-CLM-REPLACE", "field_path": "REPLACE_WITH_FIELD_PATH", "value": null, "source_id": "SRC-REPLACE", "source_url": "https://example.org/replace-with-source", "evidence_type": "secondary_source", "verification_status": "UNVERIFIED", "retrieved_at": "YYYY-MM-DD", "note": "Replace with a source-specific note."}],
+  "source_ids": ["SRC-REPLACE"],
+  "completeness": {"state": "IDENTIFIED", "missing_sections": ["hardware", "software", "engineering evidence"]}
+}

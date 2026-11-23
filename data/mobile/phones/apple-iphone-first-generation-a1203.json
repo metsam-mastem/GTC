@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "gtc_id": "GTC-MOB-APPLE-IPHONE-1ST-GEN-A1203",
+  "entity_type": "device_model",
+  "canonical_name": "Apple iPhone (1st generation)",
+  "manufacturer": {"manufacturer_id": "MFR-APPLE", "name": "Apple"},
+  "product_family": {"name": "iPhone"},
+  "taxonomy_ids": ["mobile", "mobile.smartphone"],
+  "identity": {"model_codes": ["A1203"], "codenames": [], "aliases": ["Original iPhone", "iPhone 2G"], "regulatory_ids": [], "regional_skus": []},
+  "lifecycle": {
+    "release_year": 2007, "release_date": null, "announcement_date": null, "discontinued_date": null, "status": "discontinued",
+    "events": [{"event_type": "year_introduced", "date": "2007", "description": "Apple identifies the first-generation iPhone as introduced in 2007.", "source_claim_ids": ["GTC-CLM-IPHONE-A1203-YEAR"]}]
+  },
+  "markets": ["United States and later additional markets; exact regional SKU coverage not yet catalogued"],
+  "physical": {"form_factor": "touchscreen smartphone", "dimensions_mm": null, "mass_g": null, "materials": ["anodised aluminium rear housing"]},
+  "hardware": {"network_generation": "2G", "network_standard": "GSM/EDGE", "soc_id": null, "cpu": null, "memory": null, "storage": {"options_gb": [4, 8, 16]}, "display": null, "battery": null, "connectivity": ["mini-SIM (2FF)"]},
+  "software": {"operating_system": "iPhone OS (later named iOS)", "launch_software": null, "firmware": null},
+  "relationships": [],
+  "claims": [
+    {"claim_id": "GTC-CLM-IPHONE-A1203-YEAR", "field_path": "lifecycle.release_year", "value": 2007, "source_id": "SRC-APPLE-SUPPORT", "source_url": "https://support.apple.com/en-gb/108044", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "Apple's official model-identification page states the original iPhone was introduced in 2007."},
+    {"claim_id": "GTC-CLM-IPHONE-A1203-MODEL", "field_path": "identity.model_codes", "value": "A1203", "source_id": "SRC-APPLE-SUPPORT", "source_url": "https://support.apple.com/en-gb/108044", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "Apple identifies A1203 as the number printed on the first-generation iPhone rear case."},
+    {"claim_id": "GTC-CLM-IPHONE-A1203-STORAGE", "field_path": "hardware.storage.options_gb", "value": [4, 8, 16], "unit": "GB", "source_id": "SRC-APPLE-SUPPORT", "source_url": "https://support.apple.com/en-gb/108044", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "Apple lists 4 GB, 8 GB and 16 GB capacities for the original iPhone."},
+    {"claim_id": "GTC-CLM-IPHONE-A1203-BODY", "field_path": "physical.materials", "value": "anodised aluminium rear housing", "source_id": "SRC-APPLE-SUPPORT", "source_url": "https://support.apple.com/en-gb/108044", "evidence_type": "manufacturer", "verification_status": "VERIFIED", "retrieved_at": "2026-11-23", "note": "Apple's physical identification description."}
+  ],
+  "source_ids": ["SRC-APPLE-SUPPORT"],
+  "completeness": {"state": "BASIC_PROFILE", "missing_sections": ["full launch specification sheet", "logic board revision", "SoC and baseband identification", "display and camera component suppliers", "battery and power circuitry", "firmware and boot chain", "repair and teardown evidence"]},
+  "extensions": {"variant_policy": "Storage variants become separate device_variant records only when hardware or regulatory differences are evidenced; otherwise capacity is a configuration dimension."}
+}
