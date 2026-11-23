@@ -208,7 +208,27 @@ def convert(raw: dict[str, Any], source_relative_path: str, retrieved_at: str) -
     return record, Path(target_dir) / f"{slugify(slug)}.json"
 
 
-def load_records(input_value: str, source_root: Path | None, limit: int) -> list[tuple[dict[str, Any], str, str]]:
+def load_manifest(path: Path, limit: int) -> list[tuple[dict[str, Any], str, str]]:
+    manifest = json.loads(path.read_text(encoding="utf-8"))
+    entries = manifest.get("records") if isinstance(manifest, dict) else None
+    if not isinstance(entries, list):
+        raise ValueError("manifest must contain a records array")
+    batch = []
+    for entry in entries[:max(1, limit)]:
+        if not isinstance(entry, dict) or not isinstance(entry.get("raw_url"), str):
+            raise ValueError("each manifest record must include raw_url")
+        raw, relative = fetch_raw_url(entry["raw_url"])
+        batch.append((raw, relative, entry["raw_url"]))
+    return batch
+
+
+def load_records(input_value: str | None, source_root: Path | None, limit: int, manifest_path: Path | None = None) -> list[tuple[dict[str, Any], str, str]]:
+    if manifest_path:
+        if input_value:
+            raise ValueError("pass either input or --manifest, not both")
+        return load_manifest(manifest_path, limit)
+    if not input_value:
+        raise ValueError("provide an input path, raw GitHub URL or --manifest")
     if input_value.startswith("https://"):
         raw, relative = fetch_raw_url(input_value)
         return [(raw, relative, input_value)]
@@ -227,7 +247,8 @@ def load_records(input_value: str, source_root: Path | None, limit: int) -> list
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Import selected TechAPI JSON records as GTC drafts.")
-    parser.add_argument("input", help="local JSON file/directory or one approved raw GitHub URL")
+    parser.add_argument("input", nargs="?", help="local JSON file/directory or one approved raw GitHub URL")
+    parser.add_argument("--manifest", type=Path, help="inventory manifest containing approved TechAPI raw URLs")
     parser.add_argument("--source-root", type=Path, help="TechAPI/data root; preserves relative paths")
     parser.add_argument("--output-root", type=Path, default=ROOT)
     parser.add_argument("--limit", type=int, default=100)
@@ -242,7 +263,7 @@ def main() -> int:
     source_root = args.source_root.resolve() if args.source_root else None
     registry_path = output_root / "data/registry/manufacturers.json"
     try:
-        batch = load_records(args.input, source_root, args.limit)
+        batch = load_records(args.input, source_root, args.limit, args.manifest)
         registry = json.loads(registry_path.read_text(encoding="utf-8"))
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
